@@ -1,0 +1,4 @@
+<items gfxroot="gfx/items/" version="1">
+	<active cooldown="10" maxcharges="1" description="It doesn't hold water very well" gfx="collectibles_protection.png" name="Dad's Balloon" />
+	<passive cache="damage" description="My eyes itch" gfx="collectibles_chiggers.png" name="Larval Therapy" special="true" />
+</items>
