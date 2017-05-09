@@ -1,4 +1,23 @@
 <items gfxroot="gfx/items/" version="1">
+	<passive cache="damage luck range firedelay speed" devilprice="1" description="I've become so numb.." gfx="collectibles_morphine.png" name="Morphine" id="511" />
+	<passive cache="damage flying" devilprice="2" description="Gain with pain!" gfx="collectibles_luciferswings.png" name="Lucifer's Wings" />
+	<passive cache="damage" devilprice="2" description="Strength with a cost.." gfx="collectibles_trampofbabylon.png" blackhearts="2" name="Tramp of Babylon" />
 	<active cooldown="10" maxcharges="1" description="It doesn't hold water very well" gfx="collectibles_protection.png" name="Dad's Balloon" />
+	<passive cache="firedelay" description="You feel enlightened" gfx="collectibles_divineapproval.png" name="Divine Approval" />
+	<active cache="damage" cooldown="10" maxcharges="6" description="Hold to my word and your time shall come" gfx="collectibles_adramolechsblessing.png" name="Adramolech's Blessing" />
+	<active maxcharges="2" description="These used to be Daddy's.." gfx="collectibles_fuzzydice.png" name="Fuzzy Dice" />
+	<familiar description="I hear mommy!" gfx="collectibles_pairofcans.png" name="Pair of Cans" />
+	<passive description="It hurts.." gfx="collectibles_heartarrest.png" name="Heart Arrest" />
+	<active cooldown="10" maxcharges="2" description="As we burn another page" gfx="collectibles_burntdiary.png" name="Burnt Diary" />
+	<passive cache="luck" description="This tastes funny.." gfx="collectibles_bloodpudding.png" name="Blood Pudding" />
+	<passive cache="speed firedelay damage" maxhearts="-2" description="I.. Need.. MORE!" gfx="collectibles_sugar.png" name="Sugar" />
+	<active cooldown="10" maxcharges="2" description="What'd I do?" gfx="collectibles_cooler.png" name="Angry Apple Juice" />
 	<passive cache="damage" description="My eyes itch" gfx="collectibles_chiggers.png" name="Larval Therapy" special="true" />
+	<passive cache="range firedelay damage" description="Be strong in the face of evil" gfx="collectibles_marshallscarf.png" name="Marshall Scarf" />
+	<passive cache="range firedelay" description="Brain power up" gfx="collectibles_taenia.png" name="Taenia" special="true" />
+	<active cooldown="10" maxcharges="6" description="Let it all out!" gfx="collectibles_anguishjar.png" name="Anguish Jar" special="true" />
+	<familiar description="Give me the strength to fight" gfx="collectibles_holychalice.png" name="Holy Chalice" />
+	<passive cache="damage firedelay tearcolor" description="Let loose your rage" gfx="collectibles_iron_glove.png" name="Iron Enhancement" special="true" />
+	
+	<active cooldown="10" maxcharges="0" description="Let it all out!" gfx="collectibles_anguishjar.png" name="Zip Capsule Case" special="true" />
 </items>

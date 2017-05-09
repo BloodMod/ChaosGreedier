@@ -1,15 +1,26 @@
 ﻿local ChaosGreed = RegisterMod("ChaosGreed", 1) -- 모드 등록
 
 -- 아이템 등록
-local morphine_item = Isaac.GetItemIdByName( "Morphine" )
-local protection_item = Isaac.GetItemIdByName( "Dad's Balloon" )
-local chiggers_item = Isaac.GetItemIdByName( "Larval Therapy" )
+local morphine_item = Isaac.GetItemIdByName("Morphine")
+local protection_item = Isaac.GetItemIdByName("Dad's Balloon")
+local chiggers_item = Isaac.GetItemIdByName("Larval Therapy")
+
+local zip_capsule_case_item = Isaac.GetItemIdByName("Zip Capsule Case")
+
+local zip_capsule_card = Isaac.GetCardIdByName("ZipCapsule")
 
 -- 코스튬 등록
-local morphine_costume = Isaac.GetCostumeIdByPath("gfx/costumes/morphine.anm2")
+local morphine_costume = Isaac.GetCostumeIdByPath("gfx/characters/costumes/morphine.anm2")
+local tramp_costume = Isaac.GetCostumeIdByPath("gfx/characters/costumes/tramp_of_babylon.anm2")
+
+local zipedActiveItem = CollectibleType.COLLECTIBLE_NULL
+local zipedActiveCharge = 0
 
 function ChaosGreed:postPlayerInit(player)
-    ChaosGreed.hasMorphine = false
+    hasMorphine = false
+    
+    zipedActiveItem = CollectibleType.COLLECTIBLE_NULL
+    zipedActiveCharge = 0
 end
 
 function getFlag(arr, currentFlag) -- 눈물 상태 함수
@@ -132,8 +143,8 @@ function ChaosGreed:Item1(player, cacheFlag) -- items.xml의 cacheFlag를 불러
 	end
 
 	-- 모드 아이템 카피
-	if player:HasCollectible(morphine_item) then
-		--Check which stat is being changed. The cacheFlag tells what is being changed.
+    if player:HasCollectible(morphine_item) then
+        --Check which stat is being changed. The cacheFlag tells what is being changed.
         --The game will recalculate stats separately, so we only want to add the damage when
         --the damage is being recalculated
         if cacheFlag == CacheFlag.CACHE_DAMAGE then
@@ -143,7 +154,7 @@ function ChaosGreed:Item1(player, cacheFlag) -- items.xml의 cacheFlag를 불러
             player:AddMaxHearts(2)
             player:AddHearts(-24)
             player:AddHearts(1)
-            ChaosGreed.hasMorphine = true
+            hasMorphine = true
         end
         if cacheFlag == CacheFlag.CACHE_RANGE then
             player.TearHeight = player.TearHeight - 10;
@@ -159,7 +170,6 @@ function ChaosGreed:Item1(player, cacheFlag) -- items.xml의 cacheFlag를 불러
             --Add the Tear Delay. Can't get it to work though
             player.FireDelay = player.FireDelay - 5;
         end
-
     end
 end
 
@@ -521,7 +531,7 @@ function ChaosGreed:Item2(currentPlayer) -- 패시브 설정용 함수
 	end
 
 	-- 갓모드 패시브 아이템
-	if ChaosGreed.hasMorphine then
+	if hasMorphine then
         player:AddHearts(-24)
         player:AddHearts(2)
     end
@@ -563,7 +573,28 @@ function ChaosGreed:useItem(collectible, rng)
             end
             return true
         end
-    end
+	elseif player:GetActiveItem() == zip_capsule_case_item then
+		player:AnimateCollectible(zip_capsule_case_item, "UseItem", "Idle")
+		player:AddCard(zip_capsule_card)
+		player:RemoveCollectible(zip_capsule_case_item)
+		return true
+	end
+end
+
+function ChaosGreed:useCard(card)
+	local player = Isaac.GetPlayer(0)
+
+	if card == zip_capsule_card then
+		local temp = player:GetActiveItem()
+		local tempCharge = player:GetActiveCharge() + player:GetBatteryCharge()
+		player:AddCard(zip_capsule_card)
+		player:RemoveCollectible(temp)
+		player:AddCollectible(zipedActiveItem, 2, false)
+		player:SetActiveCharge(zipedActiveCharge)
+		zipedActiveItem = temp
+		zipedActiveCharge = tempCharge
+		return true
+	end
 end
 
 function ChaosGreed:npcHit(dmg_target , dmg_amount, dmg_source, dmg_dealer)
@@ -656,7 +687,8 @@ end
 
 ChaosGreed:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, ChaosGreed.Item1) -- 모드 로드용
 ChaosGreed:AddCallback(ModCallbacks.MC_POST_UPDATE, ChaosGreed.Item2, EntityType.ENTITY_PLAYER) -- 모드 로드용
-ChaosGreed:AddCallback(ModCallbacks.MC_USE_ITEM, ChaosGreed.useItem);
-ChaosGreed:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, ChaosGreed.npcHit);  
-ChaosGreed:AddCallback(ModCallbacks.MC_FAMILIAR_UPDATE, ChaosGreed.familiarUpdate);
-ChaosGreed:AddCallback(ModCallbacks.MC_POST_PLAYER_INIT, ChaosGreed.postPlayerInit);
+ChaosGreed:AddCallback(ModCallbacks.MC_USE_ITEM, ChaosGreed.useItem)
+ChaosGreed:AddCallback(ModCallbacks.MC_USE_CARD, ChaosGreed.useCard)
+ChaosGreed:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, ChaosGreed.npcHit)
+ChaosGreed:AddCallback(ModCallbacks.MC_FAMILIAR_UPDATE, ChaosGreed.familiarUpdate)
+ChaosGreed:AddCallback(ModCallbacks.MC_POST_PLAYER_INIT, ChaosGreed.postPlayerInit)

@@ -1,40 +1,133 @@
 <ItemPools>
 	<Pool Name="treasure">
+		<!--Morphine-->
+		<Item Name="Morphine" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
+		<!--Pair of Cans-->
+		<Item Name="Pair of Cans" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
+		<Item Name="Heart Arrest" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
+
+		<!--Burnt Diary-->
+		<Item Name="Burnt Diary" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
+		<!--Blood Pudding-->
+		<Item Name="Blood Pudding" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
+		<!--Sugar-->
+		<Item Name="Sugar" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
 		<!--Larval Therapy-->
 		<Item Name="Larval Therapy" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
+		<!--Marshall Scarf-->
+		<Item Name="Marshall Scarf" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
+		<!--Taenia-->
+		<Item Name="Taenia" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
+		<Item Name="Fuzzy Dice" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
 	</Pool>
 	<Pool Name="shop">
+		<!--Morphine-->
+		<Item Name="Morphine" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
 		<!--Dad's Balloon-->
 		<Item Name="Dad's Balloon" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
+		<Item Name="Fuzzy Dice" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
+		<!--Pair of Cans-->
+		<Item Name="Pair of Cans" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
+		<!--Angry Apple Juice-->
+		<Item Name="Angry Apple Juice" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
 	</Pool>
 	<Pool Name="boss"/>
-	<Pool Name="devil"/>
-	<Pool Name="angel"/>
+	<Pool Name="devil">
+		<!--Tramp of Babylon-->
+		<Item Name="Tramp of Babylon" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
+		<!--Lucifer's Wings-->
+		<Item Name="Lucifer's Wings" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
+		<Item Name="Adramolech's Blessing" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
+		<!--Blood Pudding-->
+		<Item Name="Blood Pudding" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
+	</Pool>
+	<Pool Name="angel">
+		<Item Name="Divine Approval" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
+		<!--Marshall Scarf-->
+		<Item Name="Marshall Scarf" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
+		<!--Anguish Jar-->
+		<Item Name="Anguish Jar" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
+		<!--Holy Chalice-->
+		<Item Name="Holy Chalice" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
+	</Pool>
 	<Pool Name="secret"/>
-	<Pool Name="library"/>
+	<Pool Name="library">
+		<!--Burnt Diary-->
+		<Item Name="Burnt Diary" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
+	</Pool>
 	<Pool Name="challenge"/>
 	<Pool Name="goldenChest"/>
-	<Pool Name="redChest"/>
+	<Pool Name="redChest">
+		<!--Tramp of Babylon-->
+		<Item Name="Tramp of Babylon" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
+		<!--Lucifer's Wings-->
+		<Item Name="Lucifer's Wings" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
+	</Pool>
 	<Pool Name="beggar"/>
 	<Pool Name="demonBeggar"/>
-	<Pool Name="curse"/>
+	<Pool Name="curse">
+		<!--Morphine-->
+		<Item Name="Morphine" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
+		<!--Tramp of Babylon-->
+		<Item Name="Tramp of Babylon" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
+		<!--Lucifer's Wings-->
+		<Item Name="Lucifer's Wings" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
+	</Pool>
 	<Pool Name="keyMaster"/>
 	<Pool Name="bossrush"/>
 	<Pool Name="dungeon"/>
 	<Pool Name="greedTreasure">
+		<!--Morphine-->
+		<Item Name="Morphine" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
 		<!--Dad's Balloon-->
 		<Item Name="Dad's Balloon" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
+		<!--Pair of Cans-->
+		<Item Name="Pair of Cans" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
+		<!--Burnt Diary-->
+		<Item Name="Burnt Diary" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
+		<!--Blood Pudding-->
+		<Item Name="Blood Pudding" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
 		<!--Larval Therapy-->
 		<Item Name="Larval Therapy" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
+		<!--Taenia-->
+		<Item Name="Taenia" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
+		<Item Name="Heart Arrest" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
 	</Pool>
 	<Pool Name="greedBoss"/>
 	<Pool Name="greedShop">
+		<!--Morphine-->
+		<Item Name="Morphine" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
 		<!--Dad's Balloon-->
 		<Item Name="Dad's Balloon" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
+		<!--Pair of Cans-->
+		<Item Name="Pair of Cans" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
+		<!--Burnt Diary-->
+		<Item Name="Burnt Diary" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
+		<!--Angry Apple Juice-->
+		<Item Name="Angry Apple Juice" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
 	</Pool>
-	<Pool Name="greedCurse"/>
-	<Pool Name="greedDevil"/>
-	<Pool Name="greedAngel"/>
+	<Pool Name="greedCurse">
+		<!--Morphine-->
+		<Item Name="Morphine" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
+		<!--Tramp of Babylon-->
+		<Item Name="Tramp of Babylon" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
+		<!--Lucifer's Wings-->
+		<Item Name="Lucifer's Wings" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
+	</Pool>
+	<Pool Name="greedDevil">
+		<!--Tramp of Babylon-->
+		<Item Name="Tramp of Babylon" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
+		<!--Lucifer's Wings-->
+		<Item Name="Lucifer's Wings" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
+		<!--Blood Pudding-->
+		<Item Name="Blood Pudding" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
+	</Pool>
+	<Pool Name="greedAngel">
+		<!--Anguish Jar-->
+		<Item Name="Anguish Jar" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>		
+		<!--Holy Chalice-->
+		<Item Name="Holy Chalice" Weight="1" RemoveOn="0.1" DecreaseBy="1"/>
+	</Pool>
 	<Pool Name="greedLibrary"/>
 	<Pool Name="greedSecret"/>
 	<Pool Name="greedGoldenChest"/>
