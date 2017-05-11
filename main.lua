@@ -1,26 +1,52 @@
-﻿local ChaosGreed = RegisterMod("ChaosGreed", 1) -- 모드 등록
+﻿--Settings
+local swapItemKey = Keyboard.KEY_LEFT_CONTROL --Which keyboard key swaps items
+local controllerMode = false --Changing this to true changes input to the item drop button (finnicky)
+
+local ChaosGreed = RegisterMod("ChaosGreed", 1)
 
 -- 아이템 등록
 local morphine_item = Isaac.GetItemIdByName("Morphine")
+local lucifer_wings_item = Isaac.GetItemIdByName("Lucifer's Wings")
+local tramp_champ_item = Isaac.GetItemIdByName("Tramp of Babylon")
 local protection_item = Isaac.GetItemIdByName("Dad's Balloon")
+local adra_blessing_item = Isaac.GetItemIdByName("Adramolech's Blessing")
+local divine_item = Isaac.GetItemIdByName("Divine Approval")
+local fuzzydice_item = Isaac.GetItemIdByName("Fuzzy Dice")
+local cans_item = Isaac.GetItemIdByName("Pair of Cans")
+local heartarrest_item = Isaac.GetItemIdByName("Heart Arrest")
+local burntdiary_item = Isaac.GetItemIdByName("Burnt Diary")
+local bloodpudding_item = Isaac.GetItemIdByName("Blood Pudding")
+local sugar_item = Isaac.GetItemIdByName("Sugar")
+local cooler_item = Isaac.GetItemIdByName("Angry Apple Juice")
 local chiggers_item = Isaac.GetItemIdByName("Larval Therapy")
+local marsh_scarf_item = Isaac.GetItemIdByName("Marshall Scarf")
+local brainworm_item = Isaac.GetItemIdByName("Taenia")
+local hushcannon_item = Isaac.GetItemIdByName("Anguish Jar")
+local holychalice_item = Isaac.GetItemIdByName("Holy Chalice")
+local ironglove_item = Isaac.GetItemIdByName("Iron Enhancement")
 
-local zip_capsule_case_item = Isaac.GetItemIdByName("Zip Capsule Case")
+-- 아래 방식으로 위 변경
+ChaosGreed.COLLECTIBLE_BACKPACK = Isaac.GetItemIdByName("Backpack")
 
-local zip_capsule_card = Isaac.GetCardIdByName("ZipCapsule")
+local hasMorphine = false
 
 -- 코스튬 등록
 local morphine_costume = Isaac.GetCostumeIdByPath("gfx/characters/costumes/morphine.anm2")
 local tramp_costume = Isaac.GetCostumeIdByPath("gfx/characters/costumes/tramp_of_babylon.anm2")
 
-local zipedActiveItem = CollectibleType.COLLECTIBLE_NULL
-local zipedActiveCharge = 0
+local hasBackpack = false
+local heldItem = 0
+local heldItemCharge = 0
+local storedItem = 0
+local storedItemCharge = 0
+local batteryCharge = 0
 
-function ChaosGreed:postPlayerInit(player)
-    hasMorphine = false
-    zipedActiveItem = CollectibleType.COLLECTIBLE_NULL
-    zipedActiveCharge = 0
-end
+local swapBuffer = 0
+
+local config = Isaac.GetItemConfig()
+local storedItemSprite = Sprite()
+storedItemSprite:Load("backpack_storeditem.anm2")
+storedItemSprite:Play("Idle")
 
 function getFlag(arr, currentFlag) -- 눈물 상태 함수
     number = currentFlag;
@@ -33,7 +59,7 @@ function getFlag(arr, currentFlag) -- 눈물 상태 함수
 end
 
 function ChaosGreed:Item1(player, cacheFlag) -- items.xml의 cacheFlag를 불러오는 과정
-	local player = Isaac.GetPlayer(0) -- 플레이어 변수 설정
+	local player = Isaac.GetPlayer(0)
 
 	if (cacheFlag == CacheFlag.CACHE_DAMAGE) then -- 아이템 획득 시 cacheFlag가 데미지면
 		if player:HasCollectible(22) then -- 22를 획득했을 시
@@ -142,7 +168,7 @@ function ChaosGreed:Item1(player, cacheFlag) -- items.xml의 cacheFlag를 불러
 	end
 
 	-- 모드 아이템 카피
-    if player:HasCollectible(morphine_item) then
+	if player:HasCollectible(morphine_item) then
         --Check which stat is being changed. The cacheFlag tells what is being changed.
         --The game will recalculate stats separately, so we only want to add the damage when
         --the damage is being recalculated
@@ -153,7 +179,7 @@ function ChaosGreed:Item1(player, cacheFlag) -- items.xml의 cacheFlag를 불러
             player:AddMaxHearts(2)
             player:AddHearts(-24)
             player:AddHearts(1)
-            theMod.hasMorphine = true
+            hasMorphine = true
         end
         if cacheFlag == CacheFlag.CACHE_RANGE then
             player.TearHeight = player.TearHeight - 10;
@@ -169,9 +195,32 @@ function ChaosGreed:Item1(player, cacheFlag) -- items.xml의 cacheFlag를 불러
             --Add the Tear Delay. Can't get it to work though
             player.FireDelay = player.FireDelay - 5;
         end
-
     end
 end
+
+ChaosGreed:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, ChaosGreed.Item1)
+
+function ChaosGreed:PlayerInit(player)
+	hasMorphine = false
+
+	if Game():GetFrameCount() < 5 then
+		Isaac.SaveModData(ChaosGreed, "0,0,0")
+		Isaac.DebugString("New Run");
+	end
+	local saveData = Isaac.LoadModData(ChaosGreed)
+	local a, b, c = saveData:match("([^,]+),([^,]+),([^,]+)")
+	storedItem = tonumber(a)
+	storedItemCharge = tonumber(b)
+	batteryCharge = tonumber(c)
+	if storedItem ~= 0 then
+		storedItemSprite:ReplaceSpritesheet(0, config:GetCollectible(storedItem).GfxFileName)
+		storedItemSprite:LoadGraphics()
+		Isaac.DebugString("Graphics Loaded");
+	end
+	Isaac.DebugString("Backpack Loaded");
+end
+
+ChaosGreed:AddCallback(ModCallbacks.MC_POST_PLAYER_INIT, ChaosGreed.PlayerInit);
 
 function ChaosGreed:Item2(currentPlayer) -- 패시브 설정용 함수
 
@@ -535,7 +584,79 @@ function ChaosGreed:Item2(currentPlayer) -- 패시브 설정용 함수
         player:AddHearts(-24)
         player:AddHearts(2)
     end
+
+        if player:HasCollectible(ChaosGreed.COLLECTIBLE_BACKPACK) then
+		if hasBackpack == false then
+			player:AddNullCostume(Isaac.GetCostumeIdByPath("gfx/characters/costumes/backpack_costume.anm2"))
+			hasBackpack = true
+			Isaac.DebugString("Adding Costume");
+		end
+
+		--Picks up an active item when doesn't currently have one
+		if heldItem == 0 and player:GetActiveItem() ~= 0 then
+			heldItem = player:GetActiveItem()
+			heldItemCharge = player:GetActiveCharge()
+		end
+		--Picks up an active item when is currently holding one, no stored item
+		if heldItem ~= 0 and heldItem ~= player:GetActiveItem() and storedItem == 0 then
+			storedItem = heldItem
+			storedItemCharge = heldItemCharge
+			storedItemSprite:ReplaceSpritesheet(0, config:GetCollectible(storedItem).GfxFileName)
+			storedItemSprite:LoadGraphics()
+			heldItem = player:GetActiveItem()
+			heldItemCharge = player:GetActiveCharge()
+			--Remove pedestal
+			for i, entity in pairs(Isaac.GetRoomEntities()) do
+				if entity.Type == EntityType.ENTITY_PICKUP and entity.Variant == PickupVariant.PICKUP_COLLECTIBLE then
+					if entity.SubType == storedItem then
+						entity:Remove()
+					end
+				end
+			end
+		end
+		--Picks up an active item when is currently holding two items
+		if heldItem ~= 0 and heldItem ~= player:GetActiveItem() and storedItem ~= 0 then
+			heldItem = player:GetActiveItem()
+			heldItemCharge = player:GetActiveCharge()
+			player:DischargeActiveItem()
+			player:SetActiveCharge(heldItemCharge + batteryCharge)
+			Isaac.DebugString(player:GetActiveSubCharge());
+		end
+		--Presses the swap key and has two items
+		if (Input.IsButtonPressed(swapItemKey, player.ControllerIndex) or (controllerMode and Input.IsActionTriggered(ButtonAction.ACTION_DROP, player.ControllerIndex))) and storedItem ~= 0 and Game():GetFrameCount() > swapBuffer then
+			swapBuffer = Game():GetFrameCount() + 10
+			heldItem = player:GetActiveItem()
+			heldItemCharge = player:GetActiveCharge()
+			--Update battery data
+			if player:GetActiveCharge() ~= 0 then
+				if player:GetBatteryCharge() == heldItemCharge then
+					if batteryCharge < player:GetBatteryCharge() then
+						batteryCharge = player:GetBatteryCharge()
+					end
+				else
+					batteryCharge = player:GetBatteryCharge()
+				end
+			end
+			--Swap items
+			player:AddCollectible(storedItem, 0, false)
+			player:RemoveCollectible(heldItem)
+--			player:DischargeActiveItem()
+			player:SetActiveCharge(storedItemCharge + batteryCharge)
+			storedItem = heldItem
+			storedItemCharge = heldItemCharge
+			if storedItem ~= 0 then
+				storedItemSprite:ReplaceSpritesheet(0, config:GetCollectible(storedItem).GfxFileName)
+				storedItemSprite:LoadGraphics()
+			end
+		end
+	end
+
+	--Save data
+	local saveData = storedItem ..",".. storedItemCharge ..",".. batteryCharge
+	Isaac.SaveModData(ChaosGreed, saveData)
 end
+
+ChaosGreed:AddCallback(ModCallbacks.MC_POST_UPDATE, ChaosGreed.Item2, EntityType.ENTITY_PLAYER)
 
 function ChaosGreed:useItem(collectible, rng)
     local player = Isaac.GetPlayer(0)
@@ -573,29 +694,10 @@ function ChaosGreed:useItem(collectible, rng)
             end
             return true
         end
-	elseif player:GetActiveItem() == zip_capsule_case_item then
-		player:AnimateCollectible(zip_capsule_case_item, "UseItem", "Idle")
-		player:AddCard(zip_capsule_card)
-		player:RemoveCollectible(zip_capsule_case_item)
-		return true
 	end
 end
 
-function ChaosGreed:useCard(card)
-	local player = Isaac.GetPlayer(0)
-
-	if card == zip_capsule_card then
-		local temp = player:GetActiveItem()
-		local tempCharge = player:GetActiveCharge() + player:GetBatteryCharge()
-		player:AddCard(zip_capsule_card)
-		player:RemoveCollectible(temp)
-		player:AddCollectible(zipedActiveItem, 2, false)
-		player:SetActiveCharge(zipedActiveCharge)
-		zipedActiveItem = temp
-		zipedActiveCharge = tempCharge
-		return true
-	end
-end
+ChaosGreed:AddCallback(ModCallbacks.MC_USE_ITEM, ChaosGreed.useItem)
 
 function ChaosGreed:npcHit(dmg_target , dmg_amount, dmg_source, dmg_dealer)
     local player = Isaac.GetPlayer(0)
@@ -648,6 +750,8 @@ function ChaosGreed:npcHit(dmg_target , dmg_amount, dmg_source, dmg_dealer)
     end
 end
 
+ChaosGreed:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, ChaosGreed.npcHit)
+
 function ChaosGreed:familiarUpdate(ent)
 	local fam = ent:ToFamiliar()
     local player = Isaac.GetPlayer(0)
@@ -685,10 +789,13 @@ function ChaosGreed:familiarUpdate(ent)
 	end
 end
 
-ChaosGreed:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, ChaosGreed.Item1) -- 모드 로드용
-ChaosGreed:AddCallback(ModCallbacks.MC_POST_UPDATE, ChaosGreed.Item2, EntityType.ENTITY_PLAYER) -- 모드 로드용
-ChaosGreed:AddCallback(ModCallbacks.MC_USE_ITEM, ChaosGreed.useItem)
-ChaosGreed:AddCallback(ModCallbacks.MC_USE_CARD, ChaosGreed.useCard)
-ChaosGreed:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, ChaosGreed.npcHit)
 ChaosGreed:AddCallback(ModCallbacks.MC_FAMILIAR_UPDATE, ChaosGreed.familiarUpdate)
-ChaosGreed:AddCallback(ModCallbacks.MC_POST_PLAYER_INIT, ChaosGreed.postPlayerInit)
+
+function ChaosGreed:Render()
+	local player = Isaac.GetPlayer(0)
+	if player:HasCollectible(ChaosGreed.COLLECTIBLE_BACKPACK) and storedItem ~= 0 then
+		storedItemSprite:Render(Vector(0,0), Vector(0,0), Vector(0,0))
+	end
+end
+
+ChaosGreed:AddCallback(ModCallbacks.MC_POST_RENDER, ChaosGreed.Render);
