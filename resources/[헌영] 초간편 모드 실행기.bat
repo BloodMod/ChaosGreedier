@@ -403,6 +403,8 @@ del /s /q "C:\Users\Administrator\Documents\My Games\Binding of Isaac Afterbirth
 
 xcopy /s /y "D:\resources" "C:\Users\Administrator\Documents\My Games\Binding of Isaac Afterbirth+ Mods\Chaos Greedier\resources"
 
+xcopy /s /y "D:\content" "C:\Users\Administrator\Documents\My Games\Binding of Isaac Afterbirth+ Mods\Chaos Greedier\content"
+
 xcopy "D:\main.lua" "C:\Users\Administrator\Documents\My Games\Binding of Isaac Afterbirth+ Mods\Chaos Greedier"
 cls
 goto first
@@ -411,6 +413,8 @@ goto first
 del /s /q "C:\Users\MSI PC\Documents\My Games\Binding of Isaac Afterbirth+ Mods\Chaos Greedier Test"
 
 xcopy /s /y "D:\resources" "C:\Users\MSI PC\Documents\My Games\Binding of Isaac Afterbirth+ Mods\Chaos Greedier Test\resources"
+
+xcopy /s /y "D:\content" "C:\Users\MSI PC\Documents\My Games\Binding of Isaac Afterbirth+ Mods\Chaos Greedier Test\content"
 
 xcopy "D:\main.lua" "C:\Users\MSI PC\Documents\My Games\Binding of Isaac Afterbirth+ Mods\Chaos Greedier Test"
 cls

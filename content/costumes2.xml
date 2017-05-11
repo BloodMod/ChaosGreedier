@@ -1,4 +1,4 @@
-<costumes anm2root="gfx/characters/costumes/">
+<costumes anm2root="gfx/costumes/">
 	<costume anm2path="arac_head.anm2" priority="100" type="none" skinColor="-1"/>
 	<costume anm2path="xaphan_head.anm2" priority="100" type="none" skinColor="1"/>
 

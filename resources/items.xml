@@ -146,7 +146,7 @@
 	<active description="Reusable fly hive" gfx="Collectibles_145_GuppysHead.png" id="145" maxcharges="1" name="Guppy's Head" />
 	<active description="Reusable eternity " gfx="Collectibles_146_PrayerCard.png" id="146" maxcharges="6" name="Prayer Card" />
 	<active description="Rocks don't stand a chance" gfx="Collectibles_147_NotchedAxe.png" id="147" maxcharges="3" name="Notched Axe" />
-	<active cache="tearflag" description="Chiggers" gfx="Collectibles_148_Infestation.png" id="148" special="false" name="Chiggers" />
+	<active cache="tearflag" description="Chemical Peel 2" gfx="Collectibles_148_Infestation.png" id="148" special="false" name="Chemical Peel 2" />
 	<passive achievement="140" cache="all" description="Explosive shots" gfx="Collectibles_149_Ipecac.png" id="149" name="Ipecac" />
 	<passive description="Tooth shot" devilprice="2" gfx="Collectibles_150_ToughLove.png" id="150" special="false" name="Tough Love" />
 	<passive cache="tearflag" description="They grow inside" devilprice="2" gfx="Collectibles_151_TheMulligan.png" id="151" name="The Mulligan" />
