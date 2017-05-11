@@ -19,5 +19,5 @@
 	<familiar description="Give me the strength to fight" gfx="collectibles_holychalice.png" name="Holy Chalice" />
 	<passive cache="damage firedelay tearcolor" description="Let loose your rage" gfx="collectibles_iron_glove.png" name="Iron Enhancement" special="true" />
 	
-	<passive cache="" name="Backpack" description="More Active Space" gfx="backpack.png"/>
+	<active cooldown="10" maxcharges="0" description="Let it all out!" gfx="collectibles_anguishjar.png" name="Zip Capsule Case" special="true" />
 </items>

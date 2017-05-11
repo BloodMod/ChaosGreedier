@@ -5,6 +5,4 @@
 	<costume anm2path="tramp_of_babylon.anm2" priority="30" type="none"/>
 	<costume anm2path="morphine.anm2" priority="30" type="none"/>
 	<costume anm2path="chiggers.anm2" priority="30" type="none"/>
-
-	<costume anm2path="backpack_costume.anm2" priority="98" type="none" />
 </costumes>
