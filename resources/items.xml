@@ -86,7 +86,7 @@
 	<active description="Reusable card generator " gfx="Collectibles_085_DeckOfCards.png" id="85" maxcharges="6" name="Deck of Cards" />
 	<active achievement="13" descfription="Summon Monstro" gfx="Collectibles_086_MonstrosTooth.png" id="86" maxcharges="3" name="Monstro's Tooth" />
 	<passive achievement="15" description="Cross tears" gfx="Collectibles_087_LokisHorns.png" id="87" name="Loki's Horns" />
-	<familiar achievement="14" description="Attack buddy" gfx="Collectibles_088_LittleChubby.png" id="88" name="Little Chubby" />
+	<familiar achievement="14" description="DMG 20" gfx="Collectibles_088_LittleChubby.png" id="88" name="Little Chubby" />
 	<passive cache="tearcolor tearflag" description="Slow effect" gfx="Collectibles_089_SpidersBite.png" id="89" name="Spider Bite" />
 	<passive achievement="12" cache="tearcolor damage speed firedelay" description="DMG up" gfx="Collectibles_090_SmallRock.png" id="90" name="The Small Rock" />
 	<passive description="See-through doors" gfx="Collectibles_091_SpelunkerHat.png" id="91" name="Spelunker Hat" />
@@ -168,7 +168,7 @@
 	<familiar description="Double shot buddy" gfx="Collectibles_167_HarlequinBaby.png" id="167" name="Harlequin Baby" />
 	<passive achievement="62" cache="all" description="On-demand air strike" devilprice="2" gfx="Collectibles_168_EpicFetus.png" id="168" name="Epic Fetus" special="true" />
 	<passive cache="damage firedelay tearflag" description="Mega tears" devilprice="2" gfx="Collectibles_169_Polyphemus.png" id="169" name="Polyphemus" special="true" />
-	<familiar description="Daddy's love" gfx="Collectibles_170_DaddyLonglegs.png" id="170" name="Daddy Longlegs" />
+	<familiar description="DMG 30 x 2" gfx="Collectibles_170_DaddyLonglegs.png" id="170" name="Daddy Longlegs" />
 	<active cooldown="120" description="Mass enemy slowdown + damage" gfx="Collectibles_171_SpiderButt.png" id="171" maxcharges="2" name="Spider Butt" />
 	<familiar achievement="53" description="My fate protects me" gfx="Collectibles_172_SacrificialDagger.png" id="172" name="Sacrificial Dagger" />
 	<passive description="Absolute Seraphim" gfx="Collectibles_173_Mitre.png" id="173" name="Absolute Seraphim" />
@@ -263,20 +263,20 @@
 	<passive cache="tearflag damage" description="Short range mega tears" devilprice="2" gfx="collectibles_261_proptosis.png" id="261" special="true" name="Proptosis" />
 	<passive blackhearts="2" cache="damage" description="Evil up. Your enemies will pay!" gfx="collectibles_262_missingpage2.png" id="262" name="Missing Page 2" />
 	
-	<familiar description="Revenge fly" gfx="collectibles_264_smartfly.png" id="264" name="Smart Fly" />
+	<familiar description="DMG 4" gfx="collectibles_264_smartfly.png" id="264" name="Smart Fly" />
 	<familiar description="Immortal friend" gfx="collectibles_265_drybaby.png" id="265" name="Dry Baby" />
 	<familiar description="Sticky babies" gfx="collectibles_266_juicysack.png" id="266" name="Juicy Sack" />
 	<familiar achievement="102" description="We worked out all the kinks" gfx="collectibles_267_robobaby2.png" id="267" name="Robo-Baby 2.0" />
 	<familiar description="Infested friend" devilprice="1" gfx="collectibles_268_rottenbaby.png" id="268" name="Rotten Baby" />
 	<familiar description="Bloody friend" gfx="collectibles_269_headlessbaby.png" id="269" name="Headless Baby" />
-	<familiar description="Blood sucker" gfx="collectibles_270_leech.png" id="270" name="Leech" />
+	<familiar description="DMG 7.5 x 2" gfx="collectibles_270_leech.png" id="270" name="Leech" />
 	<familiar achievement="124" description="?" gfx="collectibles_271_mysterysack.png" id="271" name="Mystery Sack" />
 	<familiar description="Big Beautiful Fly" gfx="collectibles_272_bff.png" id="272" name="BBF" />
 	<familiar description="Explosive thoughts" gfx="collectibles_273_bobsbrain.png" id="273" name="Bob's Brain" />
 	<familiar description="Sworn protector" gfx="collectibles_274_bestbud.png" id="274" name="Best Bud" />
 	<familiar description="Evil friend" devilprice="2" gfx="collectibles_275_lilbrimstone.png" id="275" name="Lil' Brimstone" />
 	<familiar achievement="129" description="Protect it" gfx="collectibles_276_isaacsheart.png" id="276" name="Isaac's Heart" />
-	<familiar description="Fear him" gfx="collectibles_277_lilhaunt.png" id="277" name="Lil' Haunt" />
+	<familiar description="DMG 7 x 2" gfx="collectibles_277_lilhaunt.png" id="277" name="Lil' Haunt" />
 	<familiar description="He wants to take your life" gfx="collectibles_278_darkbum.png" id="278" name="Dark Bum" />
 	<familiar description="Fat protector" gfx="collectibles_279_bigfan.png" id="279" name="Big Fan" />
 	<familiar description="She loves you" gfx="collectibles_280_sissylonglegs.png" id="280" name="Sissy Longlegs" />
@@ -317,7 +317,7 @@
 	<passive cache="tearflag" description="Magnetic tears" gfx="collectibles_315_strangeattractor.png" id="315" name="Strange Attractor" />
 	<passive cache="all" description="Cursed charge shot" gfx="collectibles_316_cursedeye.png" id="316" name="Cursed Eye" />
 	<passive cache="tearflag damage" description="Brionac" gfx="collectibles_317_mysteriousliquid.png" id="317" name="Brionac" />
-	<familiar description="Conjoined friend" gfx="collectibles_318_gemini.png" id="318" name="Gemini" />
+	<familiar description="DMG 12 x 2" gfx="collectibles_318_gemini.png" id="318" name="Gemini" />
 	<familiar achievement="110" description="Near-sighted friend" gfx="collectibles_319_cainseye.png" id="319" name="Cain's Other Eye" />
 	<familiar achievement="114" description="Controlled friend" gfx="collectibles_320_bluebabysonlyfriend.png" id="320" name="???'s Only Friend" />
 	<familiar achievement="115" description="The ol' ball and chain" gfx="collectibles_321_samsonschains.png" id="321" name="Samson's Chains" />
@@ -477,7 +477,7 @@
 	<familiar achievement="315" description="Lil hush!" gfx="Collectibles_470_Hushy.png" id="470" name="Hushy" />
 	<familiar description="Ain't he cute?" gfx="Collectibles_471_LilMonstro.png" id="471" name="Lil Monstro" />
 	<familiar achievement="286" description="Lord of the dead!" gfx="Collectibles_472_KingBaby.png" id="472" name="King Baby" />
-	<familiar description="Chub chub" gfx="Collectibles_473_BigChubby.png" id="473" name="Big Chubby" />
+	<familiar description="DMG 20" gfx="Collectibles_473_BigChubby.png" id="473" name="Big Chubby" />
 	<familiar description="Gross..." gfx="Collectibles_474_Tonsil.png" id="474" name="Tonsil" />
 	<active achievement="305" description="Use with caution" gfx="Collectibles_475_PlanC.png" id="475" maxcharges="1" name="Plan C" />
 	<active achievement="296" description="What will it be?" gfx="Collectibles_476_D1.png" id="476" maxcharges="4" name="D1" />
@@ -518,10 +518,10 @@
 	<familiar description="It's sharp!" gfx="Collectibles_508_MomsRazor.png" id="508" name="Mom's Razor" />
 	<familiar description="Bloody friend" gfx="Collectibles_509_BloodshotEye.png" id="509" name="Bloodshot Eye" />
 	
-	<active achievement="338" description="Unleash the power!" gfx="Collectibles_510_Delirious.png" id="510" maxcharges="8" name="Delirious" />
+	<active achievement="338" description="Unleash the power!" gfx="Collectibles_510_Delirious.png" id="510" maxcharges="6" name="Delirious" />
 
 	<!-- Booster Pack #1 -->
-	<familiar description="He's violent" gfx="Collectibles_511_AngryFly.png" id="511" name="Angry Fly" />
+	<familiar description="DMG 15 x 3" gfx="Collectibles_511_AngryFly.png" id="511" name="Angry Fly" />
 	<active description="Nothing can escape" devilprice="2" gfx="Collectibles_512_BlackHole.png" id="512" maxcharges="2" name="Black Hole" />
 	<passive cache="damage" name="Bozo" description="Party time!" soulhearts="2" id="513" gfx="Collectibles_513_Bozo.png" />
 	<passive name="Broken Modem" description="LAG!" id="514" gfx="Collectibles_514_BrokenModem.png" />

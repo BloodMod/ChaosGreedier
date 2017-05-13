@@ -242,7 +242,7 @@
     <entity anm2path="003.269_HeadlessBaby.anm2" baseHP="0" boss="0" champion="1" collisionDamage="0" collisionMass="3" collisionRadius="13" friction="1" id="3" name="Headless Baby" numGridCollisionPoints="12" shadowSize="11" stageHP="0" variant="55">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
-    <entity anm2path="003.056_Leech.anm2" baseHP="0" boss="0" champion="1" collisionDamage="10" collisionMass="3" collisionRadius="13" friction="1" id="3" name="Leech" numGridCollisionPoints="12" shadowSize="11" stageHP="0" variant="56">
+    <entity anm2path="003.056_Leech.anm2" baseHP="0" boss="0" champion="1" collisionDamage="7.5" collisionMass="3" collisionRadius="13" friction="1" id="3" name="Leech" numGridCollisionPoints="12" shadowSize="11" stageHP="0" variant="56">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
     <entity anm2path="003.271_mysterysack.anm2" baseHP="0" boss="0" champion="1" collisionDamage="0" collisionMass="3" collisionRadius="13" friction="1" id="3" name="Mystery Sack" numGridCollisionPoints="12" shadowSize="11" stageHP="0" variant="57">
@@ -305,7 +305,7 @@
     <entity anm2path="003.075_Samsons Chains.anm2" baseHP="0" boss="0" champion="1" collisionDamage="5" collisionMass="6" collisionRadius="13" friction="1" id="3" name="Samson's Chains" numGridCollisionPoints="12" shadowSize="11" stageHP="0" variant="75">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
-    <entity anm2path="003.079_Gemini Familiar.anm2" baseHP="0" boss="0" champion="1" collisionDamage="20" collisionMass="6" collisionRadius="13" friction="1" id="3" name="Gemini Familiar" numGridCollisionPoints="12" shadowSize="11" stageHP="0" variant="79">
+    <entity anm2path="003.079_Gemini Familiar.anm2" baseHP="0" boss="0" champion="1" collisionDamage="12" collisionMass="6" collisionRadius="13" friction="1" id="3" name="Gemini Familiar" numGridCollisionPoints="12" shadowSize="11" stageHP="0" variant="79">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
     <entity anm2path="003.319_cainseye.anm2" baseHP="0" boss="0" champion="1" collisionDamage="0" collisionMass="3" collisionRadius="13" friction="1" id="3" name="Cain's Eye" numGridCollisionPoints="12" shadowSize="11" stageHP="0" variant="76">
@@ -2672,7 +2672,7 @@ bestiaryOverlay="Attack">
     <entity anm2path="" baseHP="0" boss="0" champion="1" collisionDamage="0" collisionMass="0" collisionRadius="1" friction="1" id="9001" name="Spidermod Text" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="1">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="003.118_AngryFly.anm2" baseHP="0" boss="0" champion="0" collisionDamage="10" collisionMass="3" collisionRadius="13" friction="1" id="3" name="Angry Fly" numGridCollisionPoints="12" shadowSize="20" stageHP="0" variant="118">
+	<entity anm2path="003.118_AngryFly.anm2" baseHP="0" boss="0" champion="0" collisionDamage="15" collisionMass="3" collisionRadius="13" friction="1" id="3" name="Angry Fly" numGridCollisionPoints="12" shadowSize="20" stageHP="0" variant="118">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
 	<entity anm2path="003.120_Sprinkler.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="4" collisionRadius="17" friction="1" id="3" name="Sprinkler" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="120">
