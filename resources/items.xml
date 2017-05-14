@@ -520,6 +520,7 @@
 	
 	<active achievement="338" description="Unleash the power!" gfx="Collectibles_510_Delirious.png" id="510" maxcharges="6" name="Delirious" />
 
+
 	<!-- Booster Pack #1 -->
 	<familiar description="DMG 15 x 3" gfx="Collectibles_511_AngryFly.png" id="511" name="Angry Fly" />
 	<active description="Nothing can escape" devilprice="2" gfx="Collectibles_512_BlackHole.png" id="512" maxcharges="2" name="Black Hole" />
@@ -530,6 +531,14 @@
 	<passive name="Fast Bombs" gfx="Collectibles_517_FastBombs.png" description="Faster Bomb Drops!" id="517" bombs="7" />
 	<familiar description="What could it be?!" gfx="Collectibles_518_BuddyBox.png" id="518" name="Buddy in a box" />
 	<familiar description="He's Delirious" gfx="Collectibles_519_LilDelirium.png" id="519" name="Lil Delirium" />
+
+	<!-- Booster Pack #2 -->
+	<passive description="Bloody Recharge!" gfx="Collectibles_520_JumperCable.png" name="Jumper Cables" id="520" />
+	<active description="Allow 6 weeks for delivery" gfx="Collectibles_521_CerealCutout.png" maxcharges="6" name="Coupon" id="521" />
+	<active description="The power of mind!" gfx="Collectibles_522_Telekinesis.png" maxcharges="60" name="Telekinesis" id="522" />
+	<active description="Pack and unpack" gfx="collectibles_523_movingbox.png" maxcharges="4" name="Moving Box" id="523" />
+	<passive description="Static tears!" gfx="Collectibles_524_TechnologyZero.png" name="Technology Zero" id="524" cache="tearflag" />
+	<familiar description="You're tearing me apart!" gfx="Collectibles_525_Leprosy.png" name="Leprosy" id="525" />
 
 	
 	
@@ -665,5 +674,8 @@
 	<trinket description="Poke that power outlet! Bosses charge you" gfx="trinket_120_Hairpin.png" id="120" name="Hairpin" />
 	<trinket description="My faith protects me" gfx="trinket_121_WoodenCross.png" id="121" name="Wooden Cross" />
 	<trinket description="Can't hold it!" gfx="trinket_122_Butter.png" id="122" name="Butter!" />
+
+	<!-- Booster Pack #2 -->
+	<trinket description="Angelic Spoils!" gfx="Trinket_123_FiligreeFeather.png" id="123" name="Filigree Feather" />
 
 </items>

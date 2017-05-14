@@ -28,6 +28,8 @@ local ironglove_item = Isaac.GetItemIdByName("Iron Enhancement")
 -- 아래 방식으로 위 변경
 ChaosGreed.COLLECTIBLE_BACKPACK = Isaac.GetItemIdByName("Backpack")
 
+local hermit_stars_card = Isaac.GetCardIdByName("HermitStars")
+
 local hasMorphine = false
 
 -- 코스튬 등록
@@ -206,6 +208,13 @@ function ChaosGreed:PlayerInit(player)
 	if Game():GetFrameCount() < 5 then
 		Isaac.SaveModData(ChaosGreed, "0,0,0")
 		Isaac.DebugString("New Run");
+		heldItem = 0
+		heldItemCharge = 0
+		storedItem = 0
+		storedItemCharge = 0
+		swapBuffer = 0
+		--Game():Spawn(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_TAROTCARD, player.Position + Vector(0, -1), Vector(0, 0), player, Card.CARD_HERMIT, player.InitSeed)
+		--Game():Spawn(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_TAROTCARD, player.Position + Vector(0, 1), Vector(0, 0), player, Card.CARD_STARS, player.InitSeed)
 	end
 	local saveData = Isaac.LoadModData(ChaosGreed)
 	local a, b, c = saveData:match("([^,]+),([^,]+),([^,]+)")
@@ -698,6 +707,18 @@ function ChaosGreed:useItem(collectible, rng)
 end
 
 ChaosGreed:AddCallback(ModCallbacks.MC_USE_ITEM, ChaosGreed.useItem)
+
+function ChaosGreed:useCard(card) 
+  local player = Isaac.GetPlayer(0) 
+ 
+  if card == hermit_stars_card then 
+	player:AddCard(Card.CARD_HERMIT)
+	player:AddCard(Card.CARD_STARS)
+	return true 
+  end 
+end 
+
+ChaosGreed:AddCallback(ModCallbacks.MC_USE_CARD, ChaosGreed.useCard)
 
 function ChaosGreed:npcHit(dmg_target , dmg_amount, dmg_source, dmg_dealer)
     local player = Isaac.GetPlayer(0)

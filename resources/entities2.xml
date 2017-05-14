@@ -438,36 +438,42 @@
     <entity anm2path="004.002_Decoy.anm2" baseHP="0" boss="0" champion="1" collisionDamage="0" collisionMass="30" collisionRadius="16" friction="1" id="4" name="Decoy" numGridCollisionPoints="12" shadowSize="24" stageHP="0" variant="2">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="004.003_Troll Bomb.anm2" baseHP="0" boss="0" champion="1" collisionDamage="0" collisionMass="6" collisionRadius="16" friction="1" id="4" name="Troll Bomb" numGridCollisionPoints="12" shadowSize="17" stageHP="0" variant="3">
+
+
+	<entity anm2path="004.003_Troll Bomb.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="6" collisionRadius="16" friction="1" id="4" name="Troll Bomb" numGridCollisionPoints="12" shadowSize="17" stageHP="0" variant="3">
 		<gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
 	</entity>
-    <entity anm2path="004.004_Megatroll Bomb.anm2" baseHP="0" boss="0" champion="1" collisionDamage="0" collisionMass="6" collisionRadius="16" friction="1" id="4" name="Megatroll Bomb" numGridCollisionPoints="12" shadowSize="17" stageHP="0" variant="4">
+    <entity anm2path="004.004_Megatroll Bomb.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="6" collisionRadius="16" friction="1" id="4" name="Megatroll Bomb" numGridCollisionPoints="12" shadowSize="17" stageHP="0" variant="4">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
-    <entity anm2path="004.005_Poison Bomb.anm2" baseHP="0" boss="0" champion="1" collisionDamage="0" collisionMass="6" collisionRadius="16" friction="1" id="4" name="Poison Bomb" numGridCollisionPoints="12" shadowSize="16" stageHP="0" variant="5">
+    <entity anm2path="004.0XX_MultiBomb.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="6" collisionRadius="16" friction="1" id="4" name="Poison Bomb" numGridCollisionPoints="12" shadowSize="16" stageHP="0" variant="5">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
-    <entity anm2path="004.006_Big Poison Bomb.anm2" baseHP="0" boss="0" champion="1" collisionDamage="0" collisionMass="6" collisionRadius="16" friction="1" id="4" name="Big Poison Bomb" numGridCollisionPoints="12" shadowSize="18" stageHP="0" variant="6">
+    <entity anm2path="004.0XX_MultiBomb.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="6" collisionRadius="16" friction="1" id="4" name="Big Poison Bomb" numGridCollisionPoints="12" shadowSize="18" stageHP="0" variant="6">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
-    <entity anm2path="004.007_SadBomb.anm2" baseHP="0" boss="0" champion="1" collisionDamage="0" collisionMass="6" collisionRadius="16" friction="1" id="4" name="Sad Bomb" numGridCollisionPoints="12" shadowSize="18" stageHP="0" variant="7">
+    <entity anm2path="004.0XX_MultiBomb.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="6" collisionRadius="16" friction="1" id="4" name="Sad Bomb" numGridCollisionPoints="12" shadowSize="18" stageHP="0" variant="7">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
-    <entity anm2path="004.008_FireBomb.anm2" baseHP="0" boss="0" champion="1" collisionDamage="2" collisionMass="6" collisionRadius="16" friction="1" id="4" name="Hot Bomb" numGridCollisionPoints="12" shadowSize="18" stageHP="0" variant="8">
+    <entity anm2path="004.0XX_MultiBomb.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="6" collisionRadius="16" friction="1" id="4" name="Hot Bomb" numGridCollisionPoints="12" shadowSize="18" stageHP="0" variant="8">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
-    <entity anm2path="004.009_ButtBomb.anm2" baseHP="0" boss="0" champion="1" collisionDamage="0" collisionMass="6" collisionRadius="16" friction="1" id="4" name="Butt Bomb" numGridCollisionPoints="12" shadowSize="18" stageHP="0" variant="9">
+    <entity anm2path="004.0XX_MultiBomb.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="6" collisionRadius="16" friction="1" id="4" name="Butt Bomb" numGridCollisionPoints="12" shadowSize="18" stageHP="0" variant="9">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
-    <entity anm2path="004.010_Mr Mega Bomb.anm2" baseHP="0" boss="0" champion="1" collisionDamage="0" collisionMass="6" collisionRadius="16" friction="1" id="4" name="Mr. Mega Bomb" numGridCollisionPoints="12" shadowSize="18" stageHP="0" variant="10">
+    <entity anm2path="004.0XX_MultiBomb.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="6" collisionRadius="16" friction="1" id="4" name="Mr. Mega Bomb" numGridCollisionPoints="12" shadowSize="18" stageHP="0" variant="10">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
-    <entity anm2path="004.011_Bobby Bomb.anm2" baseHP="0" boss="0" champion="1" collisionDamage="0" collisionMass="6" collisionRadius="16" friction="1" id="4" name="Bobby Bomb" numGridCollisionPoints="12" shadowSize="18" stageHP="0" variant="11">
+    <entity anm2path="004.0XX_MultiBomb.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="6" collisionRadius="16" friction="1" id="4" name="Bobby Bomb" numGridCollisionPoints="12" shadowSize="18" stageHP="0" variant="11">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="004.012_GlitterBomb.anm2" baseHP="0" boss="0" champion="1" collisionDamage="0" collisionMass="6" collisionRadius="16" friction="1" id="4" name="Glitter Bomb" numGridCollisionPoints="12" shadowSize="18" stageHP="0" variant="12">
+	<entity anm2path="004.0XX_MultiBomb.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="6" collisionRadius="16" friction="1" id="4" name="Glitter Bomb" numGridCollisionPoints="12" shadowSize="18" stageHP="0" variant="12">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
+
+
+
+
     <entity anm2path="005.011_Heart.anm2" baseHP="0" boss="0" champion="1" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="Heart" numGridCollisionPoints="24" shadowSize="17" stageHP="0" variant="10" subtype="1">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
 	    <preload-snd id="185" /> <!-- BOSS2_BUBBLES -->
@@ -2687,6 +2693,13 @@ bestiaryOverlay="Attack">
 	<entity anm2path="1000.107_BlackHoleRayParticle.anm2" baseHP="0" boss="1" champion="0" collisionDamage="0" collisionMass="0" collisionRadius="1" friction="1" id="1000" name="BlackHoleRay" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="107" subtype="1">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
+
+	<!-- Booster Pack #2 -->
+	<entity anm2path="003.121_Leprocy.anm2" baseHP="0" boss="0" champion="0" collisionDamage="7" collisionMass="3" collisionRadius="13" friction="1" id="3" name="Leprocy" numGridCollisionPoints="12" shadowSize="14" stageHP="0" variant="121">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
+
+
 	<!-- 갓모??->
 	<entity id="267" variant="10" name="The Nightmare" baseHP="1000" stageHP="1" boss="1" champion="0" collisionDamage="2" collisionMass="75" collisionRadius="20" friction="1.25" numGridCollisionPoints="12" shadowSize="22" portrait="71" anm2path="godmode_000_thenightmare.anm2" gridCollision="walls">
         <gibs amount="0" blood="1" bone="0" eye="0" gut="0" large="1" />
