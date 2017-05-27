@@ -30,7 +30,7 @@
 		<hair gfx="Character_009_EdenHair10.png" />
 	</player>
 
-	<player armor="1" bigportrait="PlayerPortraitBig_12_TheLost.png" coins="1" hp="0" id="10" items="58,232,212,242,139,416,414,545" card="55" coins="20" name="The Lost" nameimage="PlayerName_12_TheLost.png" portrait="PlayerPortrait_12_TheLost.png" trinket="3" skin="Character_012_TheLost.png" skinColor="0" />
+	<player armor="1" bigportrait="PlayerPortraitBig_12_TheLost.png" coins="1" hp="0" id="10" items="352,232,212,242,139,416,414,545" card="55" coins="20" name="The Lost" nameimage="PlayerName_12_TheLost.png" portrait="PlayerPortrait_12_TheLost.png" trinket="0" skin="Character_012_TheLost.png" skinColor="0" />
 
 	<player bigportrait="PlayerPortraitBig_10_Lazarus2.png" costume="33" hp="2" id="11" items="214" name="Lazarus II" nameimage="PlayerName_10_Lazarus.png" portrait="PlayerPortrait_10_Lazarus2.png" skin="Character_010_Lazarus2.png" skinColor="-1" />
 

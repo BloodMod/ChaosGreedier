@@ -39,6 +39,30 @@ https://goo.gl/uLkMCw
 예 : 텔레포트 2.0을 사용하지 않고 10웨이브 클리어후 다음 스테이지 진입시 해당 목숨 실격
 - 게임 시작직후 움직이기전 ESC 버튼을 1회 눌러 시드가 녹화된 후 플레이
 --------------------------------------------------------------------
+▶Chaos Greed Greedier 2.7(2)
+ -신규 제거 배열 : The Battery
+ -신규 레어 아이템 : Absolute Inzektor
+ -신규 레어 해제 아이템 : Maw Of The Void
+ -퍼밀리어 데미지 비정상적이던 현상 수정
+ -몬스터 처치시 발생하는 잔해량 전부 제거
+ -보스 몬스터와 델라니움 몬스터 색상 구분할 수 있도록 변경
+
+▶Chaos Greed Greedier 2.7
+ -The Heretic : Glass Cannon 추가, Book Of Shadows 제거
+ -Greed Shop : 상점 판매 아이템 소폭 감소 (신규 부스터팩 아이템과의 충돌로 인한 수정)
+ -미니맵 이미지가 비정상적이던 현상 수정
+ -Greed Error : : Forget Me 추가, 트랩도어 제거
+ -하드 모드 전투방 입장 및 진행이 불가능하던 현상 수정
+ -신규 부스터팩2 5종 추가
+└신규 아이템은 전부 황금방&상점 기본 배열로 설정
+ -신규 제거 배열 : Coupon (현재 특정방 입장시 튕기는 오류가 존재합니다.)
+ -Book of Shadows : 쿨타임 8 -> 6 감소
+ -Sprinkles : 쿨타임 10 -> 12 증가
+ -Glass Cannon : 쿨타임 3.6초 -> 3초 감소
+ -Red Chest, Greed Curse : 일부 세트 파츠 아이템 제거
+ -신규 오브젝트 폭탄 거지 추가
+└Bomb Bum : 천사방과 배열이 동일
+
 ▶Chaos Greed Greedier 2.6(4)
  -일부 액티브 아이템 스위칭 후 바로 적용가능하도록 변경
  -신규 제거 배열 해제 : Eden's Blessing
