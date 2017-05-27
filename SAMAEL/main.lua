@@ -3,7 +3,7 @@
 --By Ghostbroster
 
 --Settings
-local wraithModeKey = Keyboard.KEY_LEFT_ALT --Which keyboard key activates wraith mode
+local wraithModeKey = Keyboard.KEY_V --Which keyboard key activates wraith mode
 local controllerMode = false --Changing this to true will allow wraith mode to be activated with the "item drop" button (Ctrl on a keyboard) Currently the only practical way to allow controller input
 
 local wraithMeterXOffset = 60 --Wraith Meter HUD sprite offsets
@@ -1566,28 +1566,6 @@ function SamaelMod:knifeUpdate(knife)
   end
 end
 
---------Custom kill animation for the Isaac boss--------
-function SamaelMod:decapitation(npc)
-  local player = Isaac.GetPlayer(0)
-  if player:GetPlayerType() == samaelID and npc.Variant == 0 then
-    if isaacDying == false and npc.HitPoints <= 0 and not npc:GetSprite():IsPlaying("Death") then --When Isaac dies
-      npc:GetSprite().PlaybackSpeed = 0.75 --Slow him down a bit
-      npc.Position = Game():GetRoom():GetCenterPos() --Move him to the center of the room
-      npc:PlaySound(215, 1, 0, false, 1)
-      local special = Isaac.Spawn(specialAnim, 0, 0, player.Position, Vector(0,0), player):ToNPC() --Spawn the special animations entity
-      special.CanShutDoors = false
-      special.TargetPosition = Vector(npc.Position.X-60,npc.Position.Y-40)
-      special.Parent = npc
-      special:ClearEntityFlags(EntityFlag.FLAG_APPEAR)
-      special:GetSprite():Play("Decapitation", 1) --Play custom kill animation
-      player:GetSprite().Color = Color(0,0,0,0,0,0,0) --Hide and disable player
-      player.ControlsEnabled = false
-      Isaac.DebugString(player.EntityCollisionClass)
-      player.EntityCollisionClass = EntityCollisionClass.ENTCOLL_NONE
-      isaacDying = true
-    end
-  end
-end
 
 
 SamaelMod:AddCallback(ModCallbacks.MC_USE_ITEM, SamaelMod.postReroll, CollectibleType.COLLECTIBLE_D4)

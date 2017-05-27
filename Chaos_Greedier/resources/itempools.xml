@@ -217,7 +217,7 @@
 		<Item DecreaseBy="1" Id="141" RemoveOn="0" Weight="1" />
 		<Item DecreaseBy="1" Id="142" RemoveOn="0" Weight="1" />
 		<Item DecreaseBy="1" Id="143" RemoveOn="0" Weight="1" />
-		<Item DecreaseBy="1" Id="149" RemoveOn="0" Weight="1" />
+
 		<Item DecreaseBy="1" Id="150" RemoveOn="0" Weight="1" />
 		<Item DecreaseBy="1" Id="153" RemoveOn="0" Weight="1" />
 		<Item DecreaseBy="1" Id="154" RemoveOn="0" Weight="1" />
@@ -588,6 +588,7 @@
 		<Item DecreaseBy="1" Id="118" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="119" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="129" RemoveOn="0" weight="1" />
+		<Item DecreaseBy="1" Id="149" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="150" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="151" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="173" RemoveOn="0" weight="1" />
@@ -704,6 +705,7 @@
 		<Item DecreaseBy="1" Id="118" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="119" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="129" RemoveOn="0" weight="1" />
+		<Item DecreaseBy="1" Id="149" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="150" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="151" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="173" RemoveOn="0" weight="1" />
@@ -760,43 +762,43 @@
 		<Item DecreaseBy="1" Id="249" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="255" RemoveOn="0" weight="1" />
 
-		<Item DecreaseBy="0.9" Id="58" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="64" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="69" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="98" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="105" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="148" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="153" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="157" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="168" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="169" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="182" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="203" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="210" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="213" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="221" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="261" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="310" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="313" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="331" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="339" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="347" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="360" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="375" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="389" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="393" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="402" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="409" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="415" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="424" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="429" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="441" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="485" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="494" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="496" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="499" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="500" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="503" RemoveOn="0" Weight="0.9" />
+		<Item DecreaseBy="0.9" Id="58" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="64" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="69" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="98" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="105" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="148" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="153" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="157" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="168" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="169" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="182" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="203" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="210" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="213" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="221" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="261" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="310" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="313" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="331" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="339" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="347" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="360" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="375" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="389" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="393" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="402" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="409" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="415" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="424" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="429" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="441" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="485" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="494" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="496" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="499" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="500" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="503" RemoveOn="0" Weight="1.5" />
 	</Pool>
 	<Pool Name="secret">
 		
@@ -949,6 +951,7 @@
 		<Item DecreaseBy="1" Id="118" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="119" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="129" RemoveOn="0" weight="1" />
+		<Item DecreaseBy="1" Id="149" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="150" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="151" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="173" RemoveOn="0" weight="1" />
@@ -1102,6 +1105,7 @@
 		<Item DecreaseBy="1" Id="118" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="119" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="129" RemoveOn="0" weight="1" />
+		<Item DecreaseBy="1" Id="149" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="150" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="151" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="173" RemoveOn="0" weight="1" />
@@ -1509,6 +1513,7 @@
 		<Item DecreaseBy="1" Id="118" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="119" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="129" RemoveOn="0" weight="1" />
+		<Item DecreaseBy="1" Id="149" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="150" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="151" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="173" RemoveOn="0" weight="1" />
@@ -1700,43 +1705,43 @@
 		<Item DecreaseBy="1" Id="249" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="255" RemoveOn="0" weight="1" />
 
-		<Item DecreaseBy="0.9" Id="58" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="64" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="69" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="98" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="105" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="148" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="153" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="157" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="168" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="169" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="182" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="203" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="210" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="213" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="221" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="261" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="310" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="313" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="331" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="339" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="347" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="360" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="375" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="389" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="393" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="402" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="409" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="415" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="424" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="429" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="441" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="485" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="494" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="496" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="499" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="500" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="503" RemoveOn="0" Weight="0.9" />
+		<Item DecreaseBy="0.9" Id="58" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="64" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="69" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="98" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="105" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="148" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="153" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="157" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="168" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="169" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="182" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="203" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="210" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="213" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="221" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="261" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="310" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="313" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="331" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="339" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="347" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="360" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="375" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="389" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="393" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="402" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="409" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="415" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="424" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="429" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="441" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="485" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="494" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="496" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="499" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="500" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="503" RemoveOn="0" Weight="1.5" />
 
 	</Pool>
 	<Pool Name="dungeon">
@@ -1867,7 +1872,7 @@
 		<Item DecreaseBy="1" Id="141" RemoveOn="0" Weight="1" />
 		<Item DecreaseBy="1" Id="142" RemoveOn="0" Weight="1" />
 		<Item DecreaseBy="1" Id="143" RemoveOn="0" Weight="1" />
-		<Item DecreaseBy="1" Id="149" RemoveOn="0" Weight="1" />
+
 		<Item DecreaseBy="1" Id="150" RemoveOn="0" Weight="1" />
 		<Item DecreaseBy="1" Id="153" RemoveOn="0" Weight="1" />
 		<Item DecreaseBy="1" Id="154" RemoveOn="0" Weight="1" />
@@ -2302,7 +2307,7 @@
 		<Item DecreaseBy="1" Id="141" RemoveOn="0" Weight="1" />
 		<Item DecreaseBy="1" Id="142" RemoveOn="0" Weight="1" />
 		<Item DecreaseBy="1" Id="143" RemoveOn="0" Weight="1" />
-		<Item DecreaseBy="1" Id="149" RemoveOn="0" Weight="1" />
+
 		<Item DecreaseBy="1" Id="150" RemoveOn="0" Weight="1" />
 		<Item DecreaseBy="1" Id="153" RemoveOn="0" Weight="1" />
 		<Item DecreaseBy="1" Id="154" RemoveOn="0" Weight="1" />
@@ -2571,6 +2576,7 @@
 		<Item DecreaseBy="1" Id="118" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="119" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="129" RemoveOn="0" weight="1" />
+		<Item DecreaseBy="1" Id="149" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="150" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="151" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="173" RemoveOn="0" weight="1" />
@@ -2683,6 +2689,7 @@
 		<Item DecreaseBy="1" Id="118" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="119" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="129" RemoveOn="0" weight="1" />
+		<Item DecreaseBy="1" Id="149" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="150" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="151" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="173" RemoveOn="0" weight="1" />
@@ -2738,43 +2745,43 @@
 		<Item DecreaseBy="1" Id="249" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="255" RemoveOn="0" weight="1" />
 
-		<Item DecreaseBy="0.9" Id="58" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="64" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="69" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="98" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="105" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="148" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="153" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="157" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="168" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="169" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="182" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="203" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="210" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="213" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="221" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="261" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="310" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="313" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="331" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="339" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="347" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="360" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="375" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="389" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="393" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="402" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="409" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="415" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="424" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="429" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="441" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="485" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="494" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="496" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="499" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="500" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="503" RemoveOn="0" Weight="0.9" />
+		<Item DecreaseBy="0.9" Id="58" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="64" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="69" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="98" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="105" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="148" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="153" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="157" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="168" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="169" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="182" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="203" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="210" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="213" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="221" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="261" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="310" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="313" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="331" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="339" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="347" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="360" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="375" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="389" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="393" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="402" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="409" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="415" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="424" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="429" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="441" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="485" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="494" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="496" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="499" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="500" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="503" RemoveOn="0" Weight="1.5" />
 	</Pool>
 	<Pool Name="greedLibrary">
 		
@@ -2860,7 +2867,7 @@
 		<Item DecreaseBy="1" Id="141" RemoveOn="0" Weight="1" />
 		<Item DecreaseBy="1" Id="142" RemoveOn="0" Weight="1" />
 		<Item DecreaseBy="1" Id="143" RemoveOn="0" Weight="1" />
-		<Item DecreaseBy="1" Id="149" RemoveOn="0" Weight="1" />
+
 		<Item DecreaseBy="1" Id="150" RemoveOn="0" Weight="1" />
 		<Item DecreaseBy="1" Id="153" RemoveOn="0" Weight="1" />
 		<Item DecreaseBy="1" Id="154" RemoveOn="0" Weight="1" />
@@ -3164,7 +3171,7 @@
 		<Item DecreaseBy="1" Id="141" RemoveOn="0" Weight="1" />
 		<Item DecreaseBy="1" Id="142" RemoveOn="0" Weight="1" />
 		<Item DecreaseBy="1" Id="143" RemoveOn="0" Weight="1" />
-		<Item DecreaseBy="1" Id="149" RemoveOn="0" Weight="1" />
+
 		<Item DecreaseBy="1" Id="150" RemoveOn="0" Weight="1" />
 		<Item DecreaseBy="1" Id="153" RemoveOn="0" Weight="1" />
 		<Item DecreaseBy="1" Id="154" RemoveOn="0" Weight="1" />
@@ -3402,6 +3409,7 @@
 		<Item DecreaseBy="1" Id="118" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="119" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="129" RemoveOn="0" weight="1" />
+		<Item DecreaseBy="1" Id="149" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="150" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="151" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="173" RemoveOn="0" weight="1" />
@@ -3514,6 +3522,7 @@
 		<Item DecreaseBy="1" Id="118" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="119" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="129" RemoveOn="0" weight="1" />
+		<Item DecreaseBy="1" Id="149" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="150" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="151" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="173" RemoveOn="0" weight="1" />
@@ -3569,42 +3578,42 @@
 		<Item DecreaseBy="1" Id="249" RemoveOn="0" weight="1" />
 		<Item DecreaseBy="1" Id="255" RemoveOn="0" weight="1" />
 
-		<Item DecreaseBy="0.9" Id="58" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="64" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="69" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="98" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="105" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="148" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="153" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="157" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="168" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="169" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="182" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="203" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="210" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="213" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="221" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="261" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="310" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="313" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="331" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="339" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="347" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="360" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="375" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="389" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="393" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="402" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="409" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="415" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="424" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="429" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="441" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="485" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="494" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="496" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="499" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="500" RemoveOn="0" Weight="0.9" />
-		<Item DecreaseBy="0.9" Id="503" RemoveOn="0" Weight="0.9" />
+		<Item DecreaseBy="0.9" Id="58" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="64" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="69" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="98" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="105" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="148" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="153" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="157" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="168" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="169" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="182" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="203" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="210" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="213" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="221" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="261" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="310" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="313" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="331" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="339" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="347" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="360" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="375" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="389" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="393" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="402" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="409" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="415" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="424" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="429" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="441" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="485" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="494" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="496" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="499" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="500" RemoveOn="0" Weight="1.5" />
+		<Item DecreaseBy="0.9" Id="503" RemoveOn="0" Weight="1.5" />
 	</Pool>
 </ItemPools>

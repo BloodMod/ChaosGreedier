@@ -39,6 +39,29 @@ https://goo.gl/uLkMCw
 예 : 텔레포트 2.0을 사용하지 않고 10웨이브 클리어후 다음 스테이지 진입시 해당 목숨 실격
 - 게임 시작직후 움직이기전 ESC 버튼을 1회 눌러 시드가 녹화된 후 플레이
 --------------------------------------------------------------------
+▶Chaos Greed Greedier 2.9
+ -스테이지 공통 : 웨이브 추가 확장
+ -Greed Angel : 레어 아이템 등장 확률 증가 (약66%)
+ -캐릭터 공통 : HP Max +1 증가
+ -신규 아이템 : RAINBOW SPUN
+└RAINBOW SPUN : 공격시 100% 확률로 다수의 상태이상 적용
+ -신규 세트 아이템 : 타천사 : Chaos 추가
+└Lord Of Fit : BlackHearts +3
+└Fate : Eternal, SoulHearts +2.5
+ -Samael : Spear Of Destiny, Lusty Blood 폭주 단축키 Alt -> V 변경 (폭주 모드의 단축키는 추후 유저들이 직접 원하는키로 변경할 수 있도록 지원할 예정입니다.)
+└Isaac 처치시 등장하는 애니메이션 제거
+ -신규 레어 아이템 : Tenebrae Nns
+ -신규 레어 해제 아이템 : Absolute Inzektor, Lost Contact
+ -Larval Therapy : 공격시 유충 소환 확률 100% -> 30% 감소
+ -Adrenaline Shock : SoulHearts -3 -> -6 감소, DMG 5 -> 10 증가
+ -Solium Fons : 획득시 Eden's Blessing 추가
+ -Tenebrae Nus : 획득시 Incubus 추가
+ -3신기 아이템 개편 : DMG x 1.5 -> x1.4 감소
+└Symbol Of Babylonia : Luck +3 추가
+└Fars's Golden Goblet : Speed 0.6, Range +6 추가
+└Rosetta Stone : DMG (Independence) +3 추가
+ -Satan, Satan Stomp, Hush : HP Max 증가
+
 ▶Chaos Greed Greedier 2.8(3)
  -메인화면 버전이 비정상적이던 현상 수정
 
@@ -47,7 +70,7 @@ https://goo.gl/uLkMCw
  -Greed Treasure : 보상 소폭 감소
 
 ▶Chaos Greed Greedier 2.8
- -Samael : Backpack 추가, 폭주 모드 단축키 "Left Alt" 변경
+ -Samael : Backpack 추가, 폭주  단축키 "Left Alt" 변경
  -보스 몬스터, 몬스터 이미지 롤백
 
 ▶Chaos Greed Greedier 2.7(3)

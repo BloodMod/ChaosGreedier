@@ -93,25 +93,14 @@ function ChaosGreed:Item1(player, cacheFlag) -- items.xml의 cacheFlag를 불러
 				player.Damage = player.Damage * 2 -- 그냥 2배
 			end
 		end
-		if player:HasCollectible(21) then
-			if player:HasCollectible(149) then
-				player.Damage = ((player.Damage-40)*1.5)+40 -- 40 먼저 빼고 1.5를 곱해서 다시 40 더한다.
-			else -- 아니면
-				player.Damage = player.Damage * 1.5 -- 그냥 1.5배
-			end
-		end
-		if player:HasCollectible(26) then
-			if player:HasCollectible(149) then
-				player.Damage = ((player.Damage-40)*1.5)+40 -- 40 먼저 빼고 1.5를 곱해서 다시 40 더한다.
-			else -- 아니면
-				player.Damage = player.Damage * 1.5 -- 그냥 1.5배
-			end
-		end
 		if player:HasCollectible(54) then
+			player.Damage = player.Damage + 3
+		end
+		if player:HasCollectible(21) or player:HasCollectible(26) or player:HasCollectible(54) then
 			if player:HasCollectible(149) then
-				player.Damage = ((player.Damage-40)*1.5)+40 -- 40 먼저 빼고 1.5를 곱해서 다시 40 더한다.
+				player.Damage = ((player.Damage-40)*1.4)+40 -- 40 먼저 빼고 1.4를 곱해서 다시 40 더한다.
 			else -- 아니면
-				player.Damage = player.Damage * 1.5 -- 그냥 1.5배
+				player.Damage = player.Damage * 1.4 -- 그냥 1.4배
 			end
 		end
 		if player:HasCollectible(317) then
@@ -122,6 +111,9 @@ function ChaosGreed:Item1(player, cacheFlag) -- items.xml의 cacheFlag를 불러
 		if player:HasCollectible(24) then -- 24를 획득했을 시
 			player.TearHeight = player.TearHeight - 5.25 -- 사거리를 5.25 증가(마이너스가 될 수록 멀리)
 		end
+		if player:HasCollectible(26) then -- 26를 획득했을 시
+			player.TearHeight = player.TearHeight - 5.25 -- 사거리를 5.25 증가(마이너스가 될 수록 멀리)
+		end
 	end
 	if (cacheFlag == CacheFlag.CACHE_SPEED) then -- 아이템 획득 시 cacheFlag가 스피드면
 		if player:HasCollectible(24) then -- 24를 획득했을 시
@@ -130,6 +122,9 @@ function ChaosGreed:Item1(player, cacheFlag) -- items.xml의 cacheFlag를 불러
 		if player:HasCollectible(25) then -- 25를 획득했을 시
 			player.MoveSpeed = player.MoveSpeed + (0.2 * player:GetCollectibleNum(25)) -- 0.2의 스피드를 25를 획득한 수 만큼 증가
 		end
+		if player:HasCollectible(26) then -- 26를 획득했을 시
+			player.MoveSpeed = player.MoveSpeed + 0.6 -- 스피드를 0.6 증가
+		end
 	end
 	if (cacheFlag == CacheFlag.CACHE_LUCK) then -- 아이템 획득 시 CacheFlag가 운이면
 		if player:HasCollectible(23) then -- 23 획득했을 시
@@ -137,6 +132,9 @@ function ChaosGreed:Item1(player, cacheFlag) -- items.xml의 cacheFlag를 불러
 		end
 		if player:HasCollectible(46) then -- 46 획득했을 시
 			player.Luck  = player.Luck + 4 -- 럭 4 증가
+		end
+		if player:HasCollectible(21) then -- 21 획득했을 시
+			player.Luck  = player.Luck + 3 -- 럭 3 증가
 		end
 	end
 	if (cacheFlag == CacheFlag.CACHE_TEARFLAG) then
@@ -166,6 +164,10 @@ function ChaosGreed:Item1(player, cacheFlag) -- items.xml의 cacheFlag를 불러
 		end
 		if player:HasCollectible(29) and player:HasCollectible(30) and player:HasCollectible(31) then -- 29,30,31 소지 시
 			player.TearFlags = getFlag({33}, player.TearFlags); -- 33번 플래그를 줌
+			debug_text = player.TearFlags;
+		end
+		if player:HasCollectible(428) then 
+			player.TearFlags = getFlag({2,3,4,14,15,21}, player.TearFlags); 
 			debug_text = player.TearFlags;
 		end
 	end
@@ -258,8 +260,8 @@ function ChaosGreed:Item2(currentPlayer) -- 패시브 설정용 함수
 	if player:HasCollectible(118)==true and player:GetCollectibleNum(118)<2 then -- 118을 획득했고 2개 이하면(혈사)
 		player:AddCollectible(118,0,true) -- 2개를 얻을 때까지 반복해서 118 획득
 	end
-	if player:HasCollectible(493)==true and player:GetCollectibleNum(208)<5 then -- 493을 획득했고 208이 5개 이하면(아드레날린/챔벨)
-		player:AddCollectible(208,0,true) -- 5개를 얻을 때까지 반복해서 208 획득
+	if player:HasCollectible(493)==true and player:GetCollectibleNum(208)<10 then -- 493을 획득했고 208이 10개 이하면(아드레날린/챔벨)
+		player:AddCollectible(208,0,true) -- 10개를 얻을 때까지 반복해서 208 획득
 	end
 	if player:HasCollectible(417)==true and player:GetCollectibleNum(417)<2 then -- 417을 획득했고 2개 이하면(서큐)
 		player:AddCollectible(417,0,true) -- 2개를 얻을 때까지 반복해서 417 획득
@@ -289,6 +291,17 @@ function ChaosGreed:Item2(currentPlayer) -- 패시브 설정용 함수
 		if player:HasCollectible(499)==false then --499가 없다면
 			player:AddCollectible(499,0,true) -- 499 획득
 		end
+	end
+	if player:HasCollectible(179)==true and player:HasCollectible(82)==true then
+		if player:HasCollectible(402)==false then
+			player:AddCollectible(402,0,true)
+		end
+	end
+	if player:HasCollectible(29)==true and player:HasCollectible(381)==false then 
+		player:AddCollectible(381,0,true) 
+	end
+	if player:HasCollectible(30)==true and player:HasCollectible(360)==false then 
+		player:AddCollectible(360,0,true) 
 	end
 	if player:HasCollectible(170)==true and player:GetCollectibleNum(170)<2 then 
 		player:AddCollectible(170,0,true) 
@@ -744,7 +757,7 @@ function ChaosGreed:npcHit(dmg_target , dmg_amount, dmg_source, dmg_dealer)
     local flag = false
 
     if player:HasCollectible(chiggers_item) and dmg_target:IsVulnerableEnemy() then
-        if dmg_dealer.Type == EntityType.ENTITY_TEAR then
+        if dmg_dealer.Type == EntityType.ENTITY_TEAR and math.random()<0.3 then
             local spd = 5.0 + math.random()
             local ang = math.rad(math.random() * 360)
             local s = Game():Spawn(3, 802, dmg_target.Position+Vector(math.cos(ang)*spd,math.sin(ang)*spd), Vector(math.cos(ang)*spd,math.sin(ang)*spd), player, 0, player.InitSeed)
