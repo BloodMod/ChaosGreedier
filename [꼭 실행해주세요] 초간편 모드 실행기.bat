@@ -2,7 +2,8 @@
 TITLE 헌영방송 실행기
 COLOR %cc%
 ECHO %cc%
-start rooms\건들지마세요\패치노트\패치노트.txt
+start Chaos_Greedier\resources\rooms\건들지마세요\패치노트\패치노트.txt
+
 explorer "http://fav.afreecatv.com:8057/afreeca/favorite_api.php?szWork=ADD&nAspCode=0&szBjld=iwt2hw&favorite=iwt2hw&from=app"
 :First
 cls
@@ -231,7 +232,7 @@ cls
 goto first
 
 :PC 카카오톡 다운
-start rooms\건들지마세요\카카오톡\카카오톡.exe
+start Chaos_Greedier\resources\rooms\건들지마세요\카카오톡\카카오톡.exe
 cls
 goto first
 
@@ -286,14 +287,14 @@ cls
 goto first
 
 :모드적용오류해결
-explorer "https://www.youtube.com/watch?v=TzknHtfh5Uk"
+explorer "https://www.youtube.com/watch?v=LAiQ3IPI4LM"
 cls
 goto first
 
 :세이브다운
 explorer "http://live.afreecatv.com:8079/app/index.cgi?szBoard=read_bbs&szBjId=iwt2hw&nStationNo=8654100&nBbsNo=15794024&nTitleNo=10489064&nRowNum=15&nPageNo=1"
 cls
-start rooms\건들지마세요\카그세이브\카그세이브.bat
+start Chaos_Greedier\resources\rooms\건들지마세요\카그세이브\카그세이브.bat
 cls
 goto first
 
@@ -303,7 +304,7 @@ cls
 goto first
 
 :아이템적용
-xcopy "Rooms\건들지마세요\아이템스킨이미지" "gfx\items\collectibles" /y
+xcopy "Chaos_Greedier\resources\Rooms\건들지마세요\아이템스킨이미지" "Chaos_Greedier\resources\gfx\items\collectibles" /y
 cls
 goto first
 
@@ -313,26 +314,26 @@ cls
 goto first
 
 :에픽빔적용
-xcopy "Rooms\건들지마세요" "gfx\effects" /y
-xcopy "Rooms\건들지마세요\에픽빔소리" "sfx\feedback" /y
+xcopy "Chaos_Greedier\resources\rooms\건들지마세요" "Chaos_Greedier\resources\gfx\effects" /y
+xcopy "Chaos_Greedier\resources\Rooms\건들지마세요\에픽빔소리" "Chaos_Greedier\resources\sfx\feedback" /y
 cls
 goto first
 
 :에픽빔제거
-del "gfx\effects\sprite0_strip16.png" /q
-del "sfx\feedback" /q
+del "Chaos_Greedier\resources\gfx\effects\sprite0_strip16.png" /q
+del "Chaos_Greedier\resources\sfx\feedback" /q
 cls
 goto first
 
 :라이트제거
 del "players.xml" /q
-xcopy "Rooms\건들지마세요\노말\players.xml" /s /y
+xcopy "Chaos_Greedier\resources\Rooms\건들지마세요\노말\players.xml" "Chaos_Greedier\resources" /s /y
 cls
 goto first
 
 :라이트적용
-del "players.xml" /q
-xcopy "Rooms\건들지마세요\라이트\players.xml" /s /y
+del "Chaos_Greedier\resources\players.xml" /q
+xcopy "Chaos_Greedier\resources\Rooms\건들지마세요\라이트\players.xml" "Chaos_Greedier\resources" /s /y
 cls
 goto first
 
@@ -359,7 +360,7 @@ goto first
 :노말세이브
 explorer "http://live.afreecatv.com:8079/app/index.cgi?szBoard=read_bbs&szBjId=iwt2hw&nStationNo=8654100&nBbsNo=15794024&nTitleNo=8338089&nRowNum=15&nPageNo=1"
 cls
-start rooms\건들지마세요\노말세이브\노말세이브.bat
+start Chaos_Greedier\resources\rooms\건들지마세요\노말세이브\노말세이브.bat
 goto first
 
 
@@ -369,7 +370,7 @@ cls
 goto first
 
 :컴퓨터 속도 향상
-start rooms\건들지마세요\임시폴더청소기\임시폴더청소기.exe
+start Chaos_Greedier\resources\rooms\건들지마세요\임시폴더청소기\임시폴더청소기.exe
 cls
 goto first
 
@@ -399,13 +400,10 @@ cls
 goto first
 
 :컴복
-del /s /q "C:\Users\Administrator\Documents\My Games\Binding of Isaac Afterbirth+ Mods\Chaos Greedier"
+del /s /q "C:\Users\Administrator\Documents\My Games\Binding of Isaac Afterbirth+ Mods"
 
-xcopy /s /y "D:\resources" "C:\Users\Administrator\Documents\My Games\Binding of Isaac Afterbirth+ Mods\Chaos Greedier\resources"
+xcopy /s /y "D:\Mods" "C:\Users\Administrator\Documents\My Games\Binding of Isaac Afterbirth+ Mods"
 
-xcopy /s /y "D:\content" "C:\Users\Administrator\Documents\My Games\Binding of Isaac Afterbirth+ Mods\Chaos Greedier\content"
-
-xcopy "D:\main.lua" "C:\Users\Administrator\Documents\My Games\Binding of Isaac Afterbirth+ Mods\Chaos Greedier"
 cls
 goto first
 
@@ -421,8 +419,8 @@ cls
 goto first
 
 :팀뷰어
-start rooms\건들지마세요\팀뷰어\TeamViewer_Setup_ko.exe
-start rooms\건들지마세요\팀뷰어\팀뷰어.txt
+start Chaos_Greedier\resources\rooms\건들지마세요\팀뷰어\TeamViewer_Setup_ko.exe
+start Chaos_Greedier\resources\rooms\건들지마세요\팀뷰어\팀뷰어.txt
 cls
 goto first
 
@@ -433,7 +431,7 @@ goto first
 
 :리믹스
 explorer "https://drive.google.com/file/d/0B8oG5HWMdcOzZEY3Ymszdk84MWs/view?usp=sharing"
-start rooms\건들지마세요\리믹스\리믹스.txt
+start Chaos_Greedier\resources\rooms\건들지마세요\리믹스\리믹스.txt
 cls
 goto first
 

@@ -724,22 +724,22 @@
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
     <entity anm2path="006.004_Beggar.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="6" name="Beggar" numGridCollisionPoints="24" shadowSize="15" stageHP="0" variant="4">
-        <gibs amount="6" blood="0" bone="0" eye="0" gut="0" large="0" />
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
     <entity anm2path="006.005_Devil Beggar.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="6" name="Devil Beggar" numGridCollisionPoints="24" shadowSize="15" stageHP="0" variant="5" portrait="116">
-        <gibs amount="6" blood="0" bone="0" eye="0" gut="0" large="0" />
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
     <entity anm2path="006.006_Shell Game.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="6" name="Shell Game" numGridCollisionPoints="24" shadowSize="33" stageHP="0" variant="6">
-        <gibs amount="6" blood="0" bone="0" eye="0" gut="0" large="0" />
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
     <entity anm2path="006.007_Key Master.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="6" name="Key Master" numGridCollisionPoints="24" shadowSize="15" stageHP="0" variant="7">
-        <gibs amount="6" blood="0" bone="0" eye="0" gut="0" large="0" />
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
     <entity anm2path="006.008_DonationMachine.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="6" name="Donation Machine" numGridCollisionPoints="24" shadowSize="33" stageHP="0" variant="8">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
 	<entity anm2path="006.009_Bomb Bum.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="6" name="Bomb Bum" numGridCollisionPoints="24" shadowSize="15" stageHP="0" variant="9">
-        <gibs amount="6" blood="0" bone="0" eye="0" gut="0" large="0" />
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
     <entity anm2path="006.010_RestockMachine.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="6" name="Shop Restock Machine" numGridCollisionPoints="24" shadowSize="33" stageHP="0" variant="10">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
@@ -2932,7 +2932,7 @@ bestiaryOverlay="Attack">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
     <entity anm2path="godmode_38_energyloss.anm2" baseHP="100" stageHP="50" boss="1" champion="0" collisionDamage="4" collisionMass="9999999999" collisionRadius="14" friction="0.0001" id="210" name="Energy Loss" numGridCollisionPoints="0" shadowSize="16" variant="0" subtype="25" portrait="78">
-        <gibs amount="12" blood="0" bone="0" eye="0" gut="0" large="0" />
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
     <entity anm2path="godmode_39_addiction.anm2" baseHP="150" stageHP="75" boss="1" subtype="55" champion="0" collisionDamage="4" collisionMass="50" collisionRadius="24" friction="1.125" id="207" name="Addiction" numGridCollisionPoints="12" shadowSize="26" variant="0" portrait="75">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
@@ -3002,7 +3002,7 @@ bestiaryOverlay="Attack">
 	
 	
 	<entity anm2path="godmode_ignis_vortex.anm2" baseHP="1" boss="0" champion="0" collisionDamage="0" collisionMass="0" collisionRadius="0" friction="1" id="202" name="Constant Stone Shooter" numGridCollisionPoints="0" shadowSize="0" variant="5000" shutdoors="false" subtype="0" portrait="70">
-        <gibs amount="25" blood="0" bone="0" eye="0" gut="0" large="0" />
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
 				<preload-snd id="262" /> <!-- stoneshoot -->
     </entity>
 </entities>

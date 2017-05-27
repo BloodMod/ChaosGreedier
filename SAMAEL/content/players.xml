@@ -1,0 +1,10 @@
+<players root="gfx/characters/costumes/" 
+         portraitroot="gfx/ui/boss/" 
+         nameimageroot="gfx/ui/boss/" 
+         bigportraitroot="gfx/ui/stage/">
+	<player name="Samael" skin="character_samael.png" black="10" coins="20" armor="4" items="545,139,416,414"
+          nameimage="PlayerName_Samael.png" 
+          portrait="PlayerPortrait_Samael.png" 
+          bigportrait="PlayerPortraitBig_Samael.png"
+          skinColor="1" />
+</players>
