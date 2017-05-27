@@ -15,7 +15,7 @@
 
 	<player bigportrait="PlayerPortraitBig_08_Azazel.png" black="6" card="1" costume="11" hp="0" id="7" items="139,416,414,545" card="55" name="Azazel" coins="90" nameimage="PlayerName_08_Azazel.png" portrait="PlayerPortrait_08_Azazel.png" skin="Character_008_Azazel.png" skinColor="1" />
 
-	<player bigportrait="PlayerPortraitBig_09_Lazarus.png" costume="32" hp="6" id="8" name="Lazarus" card="18,10" items="402,139,416,141,53,414,545" coins="90" nameimage="PlayerName_10_Lazarus.png" pill="1" portrait="PlayerPortrait_09_Lazarus.png" skin="Character_009_Lazarus.png" skinColor="-1" />
+	<player bigportrait="PlayerPortraitBig_09_Lazarus.png" costume="32" hp="6" id="8" name="Lazarus" card="55" items="402,139,416,141,53,414,545" coins="90" nameimage="PlayerName_10_Lazarus.png" pill="1" portrait="PlayerPortrait_09_Lazarus.png" skin="Character_009_Lazarus.png" skinColor="-1" />
 
 	<player bigportrait="PlayerPortraitBig_09_Eden.png" costume="12" id="9" name="Eden" items="490,74,139,416,414,545" card="55" nameimage="PlayerName_09_Eden.png" portrait="PlayerPortrait_09_Eden.png" skin="Character_009_Eden.png" skinColor="-1">
 		<hair gfx="Character_009_EdenHair1.png" />

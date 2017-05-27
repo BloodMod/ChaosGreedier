@@ -44,6 +44,7 @@ local storedItemCharge = 0
 local batteryCharge = 0
 
 local swapBuffer = 0
+local useItemFrame = 0
 
 local config = Isaac.GetItemConfig()
 local storedItemSprite = Sprite()
@@ -213,6 +214,7 @@ function ChaosGreed:PlayerInit(player)
 		storedItem = 0
 		storedItemCharge = 0
 		swapBuffer = 0
+		useItemFrame = 0
 		--Game():Spawn(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_TAROTCARD, player.Position + Vector(0, -1), Vector(0, 0), player, Card.CARD_HERMIT, player.InitSeed)
 		--Game():Spawn(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_TAROTCARD, player.Position + Vector(0, 1), Vector(0, 0), player, Card.CARD_STARS, player.InitSeed)
 	end
@@ -594,27 +596,32 @@ function ChaosGreed:Item2(currentPlayer) -- 패시브 설정용 함수
         player:AddHearts(2)
     end
 
-        if player:HasCollectible(ChaosGreed.COLLECTIBLE_BACKPACK) then
+    if player:HasCollectible(ChaosGreed.COLLECTIBLE_BACKPACK) then
 		if hasBackpack == false then
 			player:AddNullCostume(Isaac.GetCostumeIdByPath("gfx/characters/costumes/backpack_costume.anm2"))
 			hasBackpack = true
 			Isaac.DebugString("Adding Costume");
 		end
 
-		--Picks up an active item when doesn't currently have one
+		-- Picks up an active item when doesn't currently have one
 		if heldItem == 0 and player:GetActiveItem() ~= 0 then
 			heldItem = player:GetActiveItem()
 			heldItemCharge = player:GetActiveCharge()
 		end
-		--Picks up an active item when is currently holding one, no stored item
-		if heldItem ~= 0 and heldItem ~= player:GetActiveItem() and storedItem == 0 then
+		-- Picks up an active item when is currently holding one, no stored item
+		if heldItem ~= 0 and heldItem ~= player:GetActiveItem() and storedItem == 0 and Game():GetFrameCount() > useItemFrame then
+			-- 들고 있던 아이템이 사라졌다면?
+			if player:GetActiveItem() == 0 and Game():GetFrameCount() <= useItemFrame + 20 then
+				heldItem = 0
+				heldItemCharge = 0
+			end
 			storedItem = heldItem
 			storedItemCharge = heldItemCharge
 			storedItemSprite:ReplaceSpritesheet(0, config:GetCollectible(storedItem).GfxFileName)
 			storedItemSprite:LoadGraphics()
 			heldItem = player:GetActiveItem()
 			heldItemCharge = player:GetActiveCharge()
-			--Remove pedestal
+			-- Remove pedestal
 			for i, entity in pairs(Isaac.GetRoomEntities()) do
 				if entity.Type == EntityType.ENTITY_PICKUP and entity.Variant == PickupVariant.PICKUP_COLLECTIBLE then
 					if entity.SubType == storedItem then
@@ -623,7 +630,7 @@ function ChaosGreed:Item2(currentPlayer) -- 패시브 설정용 함수
 				end
 			end
 		end
-		--Picks up an active item when is currently holding two items
+		-- Picks up an active item when is currently holding two items
 		if heldItem ~= 0 and heldItem ~= player:GetActiveItem() and storedItem ~= 0 then
 			heldItem = player:GetActiveItem()
 			heldItemCharge = player:GetActiveCharge()
@@ -631,12 +638,12 @@ function ChaosGreed:Item2(currentPlayer) -- 패시브 설정용 함수
 			player:SetActiveCharge(heldItemCharge + batteryCharge)
 			Isaac.DebugString(player:GetActiveSubCharge());
 		end
-		--Presses the swap key and has two items
+		-- Presses the swap key and has two items
 		if (Input.IsButtonPressed(swapItemKey, player.ControllerIndex) or (controllerMode and Input.IsActionTriggered(ButtonAction.ACTION_DROP, player.ControllerIndex))) and storedItem ~= 0 and Game():GetFrameCount() > swapBuffer then
 			swapBuffer = Game():GetFrameCount() + 10
 			heldItem = player:GetActiveItem()
 			heldItemCharge = player:GetActiveCharge()
-			--Update battery data
+			-- Update battery data
 			if player:GetActiveCharge() ~= 0 then
 				if player:GetBatteryCharge() == heldItemCharge then
 					if batteryCharge < player:GetBatteryCharge() then
@@ -646,10 +653,10 @@ function ChaosGreed:Item2(currentPlayer) -- 패시브 설정용 함수
 					batteryCharge = player:GetBatteryCharge()
 				end
 			end
-			--Swap items
+			-- Swap items
 			player:AddCollectible(storedItem, 0, false)
 			player:RemoveCollectible(heldItem)
---			player:DischargeActiveItem()
+			--player:DischargeActiveItem()
 			player:SetActiveCharge(storedItemCharge + batteryCharge)
 			storedItem = heldItem
 			storedItemCharge = heldItemCharge
@@ -660,7 +667,7 @@ function ChaosGreed:Item2(currentPlayer) -- 패시브 설정용 함수
 		end
 	end
 
-	--Save data
+	-- Save data
 	local saveData = storedItem ..",".. storedItemCharge ..",".. batteryCharge
 	Isaac.SaveModData(ChaosGreed, saveData)
 end
@@ -669,6 +676,9 @@ ChaosGreed:AddCallback(ModCallbacks.MC_POST_UPDATE, ChaosGreed.Item2, EntityType
 
 function ChaosGreed:useItem(collectible, rng)
     local player = Isaac.GetPlayer(0)
+
+    useItemFrame = Game():GetFrameCount() + 10
+
     if player:GetActiveItem() == protection_item then
         local act = math.random()
         if act < 0.2 then
