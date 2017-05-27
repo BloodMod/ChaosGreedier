@@ -378,6 +378,9 @@ function ChaosGreed:Item2(currentPlayer) -- 패시브 설정용 함수
 		if player:HasCollectible(492)==false then
 			player:AddCollectible(492,0,true)
 		end
+		if player:HasCollectible(chiggers_item)==false then
+			player:AddCollectible(chiggers_item,0,true)
+		end
 	end
 	if player:HasCollectible(173)==true then -- 앱솔루트 세라핌
 		if player:HasCollectible(156)==false then
@@ -411,8 +414,14 @@ function ChaosGreed:Item2(currentPlayer) -- 패시브 설정용 함수
 		if player:HasCollectible(222)==false then
 			player:AddCollectible(222,0,true)
 		end
-		if player:GetCollectibleNum(381)<3 then
-			player:AddCollectible(381,0,true)
+		if player:HasCollectible(1)==false then
+			player:AddCollectible(1,0,true)
+		end
+		if player:HasCollectible(32)==false then
+			player:AddCollectible(32,0,true)
+		end
+		if player:HasCollectible(341)==false then
+			player:AddCollectible(341,0,true)
 		end
 	end
 	if player:HasCollectible(456) then -- 만약 클리너 소지 시

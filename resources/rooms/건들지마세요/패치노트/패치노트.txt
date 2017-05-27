@@ -39,6 +39,16 @@ https://goo.gl/uLkMCw
 예 : 텔레포트 2.0을 사용하지 않고 10웨이브 클리어후 다음 스테이지 진입시 해당 목숨 실격
 - 게임 시작직후 움직이기전 ESC 버튼을 1회 눌러 시드가 녹화된 후 플레이
 --------------------------------------------------------------------
+▶Chaos Greed Greedier 2.6(4)
+ -일부 액티브 아이템 스위칭 후 바로 적용가능하도록 변경
+ -신규 제거 배열 해제 : Eden's Blessing
+ -Absolute Gravity : Eden's Blessing x 3-> Torn Photo, The Sad Onion, Wire Coat Hanger 획득
+ -Absolute Inzektor : Larval Therapy 추가
+ -Spelunker Hat : Bombs +3 추가
+ -Eden's Blessing 효과가 적용되지 않던 현상 수정
+ -일부 몬스터 이미지를 변종 확인이 가능하도록 변경
+ -크람푸스방 보상 소폭 증가
+
 ▶Chaos Greed Greedier 2.6(3)
  -천사방 아이템 획득시 나머지 아이템 전부 제거 :: More Option 효과와 동일 (공식 패치이며 그에따라 천사방의 보상이 증가됩니다.)
  -구토제(Ipecac), 리드 연필(Lead Pencil) 조합시 강제적으로 피격되던 현상 수정

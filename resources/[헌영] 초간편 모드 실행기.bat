@@ -22,7 +22,7 @@ ECHO        
 ECHO       5) 각종 커뮤니티 사이트         6) 타이머 및 유틸리티          
 ECHO        
 ECHO        
-ECHO       7) 히오스 공홈 바로가기         8) 방송 브금(47GB 다운로드)    
+ECHO       7) 모드 최신 버전 체크          8) 방송 브금(47GB 다운로드)    
 ECHO        
 ECHO        
 ECHO       9) 팀뷰어 원격 요청             10) 방송 톡방 가입             
@@ -308,7 +308,7 @@ cls
 goto first
 
 :애프터다운
-explorer "https://drive.google.com/file/d/0B8oG5HWMdcOzSXFtM1hqRld2Z2s/view?usp=sharing"
+explorer "http://live.afreecatv.com:8079/app/index.cgi?szBoard=read_bbs&szBjId=iwt2hw&nStationNo=8654100&nBbsNo=15794028&nTitleNo=20952398&nRowNum=15&nPageNo=1&szSearchWord=&nSearchType=1&nBoardType=0"
 cls
 goto first
 
@@ -374,7 +374,7 @@ cls
 goto first
 
 :히오스
-explorer "http://kr.battle.net/heroes/ko/"
+explorer "http://live.afreecatv.com:8079/app/index.cgi?szBoard=read_bbs&szBjId=iwt2hw&nStationNo=8654100&nBbsNo=50796777&nTitleNo=17490563&nRowNum=15&nPageNo=1&szSearchWord=&nSearchType=1&nBoardType=0"
 cls
 goto first
 
