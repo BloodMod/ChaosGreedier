@@ -408,13 +408,9 @@ cls
 goto first
 
 :ณ๋บน
-del /s /q "C:\Users\MSI PC\Documents\My Games\Binding of Isaac Afterbirth+ Mods\Chaos Greedier Test"
+del /s /q "C:\Users\MSI PC\Documents\My Games\Binding of Isaac Afterbirth+ Mods"
 
-xcopy /s /y "D:\resources" "C:\Users\MSI PC\Documents\My Games\Binding of Isaac Afterbirth+ Mods\Chaos Greedier Test\resources"
-
-xcopy /s /y "D:\content" "C:\Users\MSI PC\Documents\My Games\Binding of Isaac Afterbirth+ Mods\Chaos Greedier Test\content"
-
-xcopy "D:\main.lua" "C:\Users\MSI PC\Documents\My Games\Binding of Isaac Afterbirth+ Mods\Chaos Greedier Test"
+xcopy /s /y "D:\Mods" "C:\Users\MSI PC\Documents\My Games\Binding of Isaac Afterbirth+ Mods"
 cls
 goto first
 
