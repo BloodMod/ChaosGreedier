@@ -39,6 +39,12 @@ https://goo.gl/uLkMCw
 예 : 텔레포트 2.0을 사용하지 않고 10웨이브 클리어후 다음 스테이지 진입시 해당 목숨 실격
 - 게임 시작직후 움직이기전 ESC 버튼을 1회 눌러 시드가 녹화된 후 플레이
 --------------------------------------------------------------------
+▶Chaos Greed Greedier 2.9(2)
+ -일부 웨이브 난이도 하향
+ -일부 세트 파츠 아이템이 황금방 및 상점에서 등장하던 현상 수정
+ -일부 아이템들 이미지 스킨 올바르게 수정
+ -CAT-O-NINE-TAILS : DMG 1 -> 2 증가
+
 ▶Chaos Greed Greedier 2.9
  -스테이지 공통 : 웨이브 추가 확장
  -Greed Angel : 레어 아이템 등장 확률 증가 (약66%)
@@ -458,7 +464,9 @@ https://goo.gl/uLkMCw
  -Chaos : A Quarter추가, A Dollar 제거
  -The Heretic : Infamy, Guppy's Collar, AAA Battery(Trinket)
 --------------------------------------------------------------------
-
+Greed Devil, Devil, Greed Golden Chest, Golden Chest, Curse
+Greed Angel, Angel, Library, Bomb bum
+Red Chest, Greed Curse
 
 //Unknown
  -신규 아이템 : Refined Destructive Magic Stone Bracelet(정제된 마석의 팔찌), Refined Chaos Stone Necklace(정제된 마석의 목걸이), Refined Amnesia Stone Ring(정제된 마석의 반지)

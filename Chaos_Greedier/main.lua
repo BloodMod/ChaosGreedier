@@ -315,6 +315,9 @@ function ChaosGreed:Item2(currentPlayer) -- 패시브 설정용 함수
 	if player:HasCollectible(318)==true and player:GetCollectibleNum(318)<2 then 
 		player:AddCollectible(318,0,true)
 	end
+	if player:HasCollectible(165)==true and player:GetCollectibleNum(165)<2 then 
+		player:AddCollectible(165,0,true)
+	end
 	if player:HasCollectible(119)==true then -- 119를 획득하면(앱솔루트 구피)
 		if player:HasCollectible(134)==false then -- 134를 획득하지 않았을 때
 			player:AddCollectible(134,0,true) -- 134 획득
