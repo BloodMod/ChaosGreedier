@@ -1525,7 +1525,7 @@ bestiaryTransform="0,0,1" bestiaryAnim="Fly">
     <entity anm2path="083.000_Headless Horsemans Head.anm2" baseHP="110" boss="1" bossID="22" champion="1" collisionDamage="2" collisionMass="30" collisionRadius="16" friction="1" id="83" name="Headless Horsemans Head" numGridCollisionPoints="0" shadowSize="23" stageHP="50" variant="0" portrait="22" bestiary="true" bestiaryTransform="0,0,1" bestiaryAnim="Walk">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
-    <entity anm2path="084.000_Satan.anm2" baseHP="20000" boss="1" bossID="24" champion="1" collisionDamage="12" collisionMass="100" collisionRadius="30" friction="1" id="84" name="Satan" numGridCollisionPoints="0" shadowSize="33" stageHP="0" variant="0" portrait="55" bestiary="true" bestiaryTransform="0,15,.7" bestiaryAnim="Walk">
+    <entity anm2path="084.000_Satan.anm2" baseHP="30000" boss="1" bossID="24" champion="1" collisionDamage="12" collisionMass="100" collisionRadius="30" friction="1" id="84" name="Satan" numGridCollisionPoints="0" shadowSize="33" stageHP="0" variant="0" portrait="55" bestiary="true" bestiaryTransform="0,15,.7" bestiaryAnim="Walk">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
         <preload id="84" variant="10" />
         <preload-snd id="246" /> <!-- SOUND_SATAN_STOMP -->
@@ -1541,7 +1541,7 @@ bestiaryTransform="0,0,1" bestiaryAnim="Fly">
 		<preload id="1000" variant="50" subtype="1" />
 		<preload-snd id="211" /> <!-- SOUND_HAND_LASERS -->
     </entity>
-    <entity anm2path="084.010_Satan Stomp.anm2" baseHP="16000" boss="1" bossID="24" champion="1" collisionDamage="12" collisionMass="100" collisionRadius="55" friction="1" id="84" name="Satan Stomp" numGridCollisionPoints="0" shadowSize="50" stageHP="0" variant="10" portrait="55">
+    <entity anm2path="084.010_Satan Stomp.anm2" baseHP="24000" boss="1" bossID="24" champion="1" collisionDamage="12" collisionMass="100" collisionRadius="55" friction="1" id="84" name="Satan Stomp" numGridCollisionPoints="0" shadowSize="50" stageHP="0" variant="10" portrait="55">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
         <preload-snd id="52" /> <!-- SOUND_HELLBOSS_GROUNDPOUND -->
     </entity>
@@ -1641,7 +1641,7 @@ bestiaryTransform="0,0,1" bestiaryAnim="Fly">
         <preload-snd id="54" /> <!-- SOUND_HOLY -->
         <preload-snd id="266" /> <!-- SOUND_SUPERHOLY -->
     </entity>
-    <entity anm2path="102.002_ (alt).anm2" baseHP="40000" boss="1" bossID="63" champion="1" collisionDamage="12" collisionMass="100" collisionRadius="25" friction="1" id="102" name="??? (Alt)" numGridCollisionPoints="12" shadowSize="15" stageHP="0" variant="2" portrait="63">
+    <entity anm2path="102.002_ (alt).anm2" baseHP="60000" boss="1" bossID="63" champion="1" collisionDamage="12" collisionMass="100" collisionRadius="25" friction="1" id="102" name="??? (Alt)" numGridCollisionPoints="12" shadowSize="15" stageHP="0" variant="2" portrait="63">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
         <preload-snd id="143" /> <!-- SOUND_SCARED_WHIMPER -->
         <preload-snd id="129" /> <!-- SOUND_POWERUP2 -->
@@ -2235,13 +2235,13 @@ bestiaryOverlay="Attack">
 	<entity id="405" variant="1" name="Rag Man's Head" baseHP="17.5" stageHP="17.5" boss="0" champion="1" collisionDamage="2" collisionMass="10" collisionRadius="20" friction="1" numGridCollisionPoints="12" shadowSize="16" portrait="83" anm2path="405.001_Ragman_Rolling_Head.anm2">
 		<gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
 	</entity>
-    <entity id="406" variant="0" name="Ultra Greed" baseHP="12000" stageHP="0" boss="1" bossID="62" champion="1" collisionDamage="12" collisionMass="50" collisionRadius="25" friction="1" numGridCollisionPoints="40" shadowSize="60" portrait="84" anm2path="406.000_UltraGreed.anm2" bestiary="true" bestiaryTransform="0,10,.7" bestiaryAnim="SlotSpinningFast">
+    <entity id="406" variant="0" name="Ultra Greed" baseHP="16000" stageHP="0" boss="1" bossID="62" champion="1" collisionDamage="12" collisionMass="50" collisionRadius="25" friction="1" numGridCollisionPoints="40" shadowSize="60" portrait="84" anm2path="406.000_UltraGreed.anm2" bestiary="true" bestiaryTransform="0,10,.7" bestiaryAnim="SlotSpinningFast">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
-    <entity id="406" variant="1" name="Ultra Greedier" baseHP="30000" stageHP="0" boss="1" bossID="71" champion="1" collisionDamage="12" collisionMass="70" collisionRadius="25" friction="1" numGridCollisionPoints="40" shadowSize="60" portrait="84" anm2path="406.001_UltraGreedier.anm2" bestiary="true" bestiaryTransform="0,10,.7" bestiaryAnim="Tantrum">
+    <entity id="406" variant="1" name="Ultra Greedier" baseHP="45000" stageHP="0" boss="1" bossID="71" champion="1" collisionDamage="12" collisionMass="70" collisionRadius="25" friction="1" numGridCollisionPoints="40" shadowSize="60" portrait="84" anm2path="406.001_UltraGreedier.anm2" bestiary="true" bestiaryTransform="0,10,.7" bestiaryAnim="Tantrum">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
-	<entity id="407" variant="0" name="Hush" baseHP="24000" stageHP="0" boss="1" bossID="63" champion="1" collisionDamage="12" collisionMass="1000" collisionRadius="100" friction="1" numGridCollisionPoints="40" shadowSize="0" portrait="85" anm2path="407.000_Hush.anm2" bestiary="true" bestiaryTransform="0,-16,.4" bestiaryAnim="AttackLoopDown">
+	<entity id="407" variant="0" name="Hush" baseHP="30000" stageHP="0" boss="1" bossID="63" champion="1" collisionDamage="12" collisionMass="1000" collisionRadius="100" friction="1" numGridCollisionPoints="40" shadowSize="0" portrait="85" anm2path="407.000_Hush.anm2" bestiary="true" bestiaryTransform="0,-16,.4" bestiaryAnim="AttackLoopDown">
 		<gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
 	</entity>
 	<entity id="408" variant="0" name="Hush (Skinless)" baseHP="500" stageHP="0" boss="1" bossID="63" champion="1" collisionDamage="2" collisionMass="1000" collisionRadius="100" friction="1" numGridCollisionPoints="40" shadowSize="60" portrait="85" anm2path="408.000_Hush_Skinless.anm2">

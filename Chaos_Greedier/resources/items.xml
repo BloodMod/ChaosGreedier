@@ -120,7 +120,7 @@
 	<passive achievement="147" description="Apocalypse" gfx="Collectibles_119_BloodBag.png" hearts="10" id="119" devilprice="2" special="true" name="Absolute Guppy" />
 	<passive cache="damage firedelay speed" description="Fire rate up" gfx="Collectibles_120_OddMushroomThin.png" id="120" name="Odd Mushroom" />
 	<passive cache="damage speed range" description="DMG up" gfx="Collectibles_121_OddMushroomLarge.png" id="121" maxhearts="2" name="Odd Mushroom" />
-	<passive cache="damage speed" description="Curse up" gfx="Collectibles_122_WhoreOFBabylon.png" id="122" name="Whore of Babylon" />
+	<passive cache="flying damage speed" description="Curse up" gfx="Collectibles_122_WhoreOFBabylon.png" id="122" name="Whore of Babylon" />
 	<active description="Temporary buddy generator" gfx="Collectibles_123_MonsterManual.png" id="123" maxcharges="3" name="Monster Manual" />
 	<active description="It's a mystery" gfx="Collectibles_124_DeadSeaScrolls.png" id="124" maxcharges="2" name="Dead Sea Scrolls" />
 	<passive bombs="5" description="Homing bombs" gfx="Collectibles_125_BobbyBomb.png" id="125" name="Bobby-Bomb" />
@@ -440,7 +440,7 @@
 	<familiar description="4-way buddy!" gfx="Collectibles_435_LilLoki.png" id="435" name="Lil Loki" />
 	<familiar cache="firedelay" description="dont cry over it..." devilprice="2" gfx="Collectibles_436_Milk.png" id="436" name="Milk!" />
 	<active description="Reroll Rewards!" gfx="Collectibles_437_D7.png" id="437" maxcharges="3" name="D7" />
-	<passive cache="firedelay" description="Memories..." gfx="Collectibles_438_Binky.png" id="438" name="Binky" soulhearts="2" />
+	<passive cache="firedelay" description="memory..." gfx="Collectibles_438_Binky.png" id="438" soulhearts="2" name="Binky" />
 	<active cache="all" description="Whats inside?" gfx="Collectibles_439_MomsBox.png" id="439" maxcharges="4" name="Mom's Box" />
 	<passive achievement="232" cache="range speed firedelay" description="Matt's Kidney Stone" gfx="Collectibles_440_KidneyStone.png" id="440" name="Kidney Stone" />
 	<active achievement="276" description="Laser Breath" devilprice="2" gfx="collectibles_441_megasatansbreath.png" id="441" special="true" maxcharges="20" name="Mega Blast" />
@@ -453,7 +453,7 @@
 	<passive description="Halitosis" gfx="Collectibles_446_DeadTooth.png" id="446" name="Dead Tooth" />
 	<passive description="Crying makes me toot" gfx="Collectibles_447_LingerBean.png" id="447" name="Linger Bean" />
 	<passive description="Blood and guts!" gfx="Collectibles_448_ShardOfGlass.png" id="448" name="Shard of Glass" />
-	<passive description="It itches..." gfx="Collectibles_449_MetalPlate.png" id="449" name="Metal Plate" soulhearts="2" />
+	<active description="Super Rookie Lucky Boy" cache="luck" gfx="Collectibles_449_MetalPlate.png" id="449" name="Metal Plate" />
 	<passive achievement="308" description="Gold tears!" gfx="Collectibles_450_EyeOfGreed.png" id="450" name="(0.2) Eye of Greed (0.2)" />
 	<passive description="I see the future" devilprice="2" gfx="Collectibles_451_TarotCloth.png" id="451" name="Tarot Cloth" />
 	<passive description="I'm leaking..." gfx="Collectibles_452_VaricoseVeins.png" id="452" name="Varicose Veins" />
@@ -523,7 +523,8 @@
 
 	<!-- Booster Pack #1 -->
 	<familiar description="DMG 15 x 3" gfx="Collectibles_511_AngryFly.png" id="511" name="Angry Fly" />
-	<active description="Nothing can escape" devilprice="2" gfx="Collectibles_512_BlackHole.png" id="512" maxcharges="2" name="Black Hole" />
+	<active description="Nothing can escape" devilprice="2" gfx="Collectibles_512_BlackHole.png" id="512" maxcharges="2" name="
+" />
 	<passive cache="damage" name="Bozo" description="Party time!" soulhearts="2" id="513" gfx="Collectibles_513_Bozo.png" />
 	<passive name="Broken Modem" description="LAG!" id="514" gfx="Collectibles_514_BrokenModem.png" />
 	<active description="Wrapped up nice for you!" devilprice="2" id="515" gfx="Collectibles_515_MysteryGift.png" name="Mystery Gift" />

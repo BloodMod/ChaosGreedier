@@ -136,6 +136,9 @@ function ChaosGreed:Item1(player, cacheFlag) -- items.xml의 cacheFlag를 불러
 		if player:HasCollectible(21) then -- 21 획득했을 시
 			player.Luck  = player.Luck + 3 -- 럭 3 증가
 		end
+		if player:HasCollectible(449) then
+			player.Luck  = player.Luck + 14
+		end
 	end
 	if (cacheFlag == CacheFlag.CACHE_TEARFLAG) then
 		if player:HasCollectible(339) then -- 339 획득
@@ -169,6 +172,11 @@ function ChaosGreed:Item1(player, cacheFlag) -- items.xml의 cacheFlag를 불러
 		if player:HasCollectible(428) then 
 			player.TearFlags = getFlag({2,3,4,14,15,21}, player.TearFlags); 
 			debug_text = player.TearFlags;
+		end
+	end
+	if (cacheFlag == CacheFlag.CACHE_FLYING) then
+		if player:HasCollectible(122) then
+			player.CanFly = true
 		end
 	end
 
@@ -317,6 +325,12 @@ function ChaosGreed:Item2(currentPlayer) -- 패시브 설정용 함수
 	end
 	if player:HasCollectible(165)==true and player:GetCollectibleNum(165)<2 then 
 		player:AddCollectible(165,0,true)
+	end
+	if player:HasCollectible(275)==true and player:GetCollectibleNum(275)<3 then 
+		player:AddCollectible(275,0,true)
+	end
+	if player:HasCollectible(508)==true and player:GetCollectibleNum(508)<3 then 
+		player:AddCollectible(508,0,true)
 	end
 	if player:HasCollectible(119)==true then -- 119를 획득하면(앱솔루트 구피)
 		if player:HasCollectible(134)==false then -- 134를 획득하지 않았을 때
@@ -510,10 +524,10 @@ function ChaosGreed:Item2(currentPlayer) -- 패시브 설정용 함수
 		end
 	end
 	if player:GetPlayerType(5) and player:HasCollectible(126) then --만약 플레이어가 이브(5)이고 만약 126(면도) 소지 시라면
-		player:AddCollectible(512,2,false) -- 블랙혹 획득
+		player:AddCollectible(485,6,true)
 	end
-	if player:GetTrinket(112) then -- 112 장신구 획득 시
-		player:TryRemoveTrinket(112) -- 112 장신구를 없애게 시도
+	if player:GetPlayerType(5) and player:HasCollectible(356) then 
+		player:RemoveCollectible(356)
 	end
 	if player:GetTrinket(51) then -- 동일
 		player:TryRemoveTrinket(51)
@@ -526,93 +540,6 @@ function ChaosGreed:Item2(currentPlayer) -- 패시브 설정용 함수
 	end
 	if player:GetTrinket(49) then 
 		player:TryRemoveTrinket(49)
-	end
-	if player:GetTrinket(110) then 
-		player:TryRemoveTrinket(110)
-	end
-	if player:GetTrinket(111) then 
-		player:TryRemoveTrinket(111)
-	end
-	if player:GetTrinket(113) then 
-		player:TryRemoveTrinket(113)
-	end
-	if player:GetTrinket(114) then 
-		player:TryRemoveTrinket(114)
-	end
-	if player:GetTrinket(115) then 
-		player:TryRemoveTrinket(115)
-	end
-	if player:GetTrinket(116) then 
-		player:TryRemoveTrinket(116)
-	end
-	if player:GetTrinket(117) then 
-		player:TryRemoveTrinket(117)
-	end
-	if player:GetTrinket(5) then 
-		player:TryRemoveTrinket(5)
-	end
-	if player:GetTrinket(9) then 
-		player:TryRemoveTrinket(9)
-	end
-	if player:GetTrinket(10) then 
-		player:TryRemoveTrinket(10)
-	end
-	if player:GetTrinket(11) then 
-		player:TryRemoveTrinket(11)
-	end
-	if player:GetTrinket(12) then 
-		player:TryRemoveTrinket(12)
-	end
-	if player:GetTrinket(16) then 
-		player:TryRemoveTrinket(16)
-	end
-	if player:GetTrinket(24) then 
-		player:TryRemoveTrinket(24)
-	end
-	if player:GetTrinket(25) then 
-		player:TryRemoveTrinket(25)
-	end
-	if player:GetTrinket(26) then 
-		player:TryRemoveTrinket(26)
-	end
-	if player:GetTrinket(32) then 
-		player:TryRemoveTrinket(32)
-	end
-	if player:GetTrinket(33) then 
-		player:TryRemoveTrinket(33)
-	end
-	if player:GetTrinket(34) then 
-		player:TryRemoveTrinket(34)
-	end
-	if player:GetTrinket(46) then 
-		player:TryRemoveTrinket(46)
-	end
-	if player:GetTrinket(57) then 
-		player:TryRemoveTrinket(57)
-	end
-	if player:GetTrinket(59) then 
-		player:TryRemoveTrinket(59)
-	end
-	if player:GetTrinket(64) then 
-		player:TryRemoveTrinket(64)
-	end
-	if player:GetTrinket(65) then 
-		player:TryRemoveTrinket(65)
-	end
-	if player:GetTrinket(66) then 
-		player:TryRemoveTrinket(66)
-	end
-	if player:GetTrinket(67) then 
-		player:TryRemoveTrinket(67)
-	end
-	if player:GetTrinket(68) then 
-		player:TryRemoveTrinket(68)
-	end
-	if player:GetTrinket(75) then 
-		player:TryRemoveTrinket(75)
-	end
-	if player:GetTrinket(83) then 
-		player:TryRemoveTrinket(83)
 	end
 
 	-- 갓모드 패시브 아이템

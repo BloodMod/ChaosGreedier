@@ -403,8 +403,7 @@
 	<costume anm2path="429_HeadOfTheKeeper.anm2" id="429" type="passive" />
 	<costume anm2path="432_glitterbombs.anm2" hasOverlay="true" id="432" type="passive" />
 	<costume anm2path="433_MyShadow.anm2" id="433" type="passive" />
-	<costume anm2path="438_Binky.anm2" id="438" type="passive" />
-	
+
 	<costume anm2path="443_Apple.anm2" id="443" type="passive" />
 	<costume anm2path="444_LeadPencil.anm2" id="444" type="passive" />
 	<costume anm2path="445_DogTooth.anm2" hasSkinAlt="true" id="445" type="passive" />

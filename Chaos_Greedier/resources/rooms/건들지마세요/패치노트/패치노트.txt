@@ -39,11 +39,25 @@ https://goo.gl/uLkMCw
 예 : 텔레포트 2.0을 사용하지 않고 10웨이브 클리어후 다음 스테이지 진입시 해당 목숨 실격
 - 게임 시작직후 움직이기전 ESC 버튼을 1회 눌러 시드가 녹화된 후 플레이
 --------------------------------------------------------------------
+▶Chaos Greed Greedier 3.0(2)
+ -Binky : 액티브 아이템이던 현상 수정
+▶Chaos Greed Greedier 3.0
+ -Samael : Black Hole 추가
+ -Greed Shop(Stage) : Perthro 추가
+ -신규 레어 배열 해제 : Absolute Inzektor
+ -Mom's Razor, Lil' Brimstone : 획득시 x3 추가
+ -신규 아이템 : Clover
+└Clover : Luck +14 증가, 액티브
+ -신규 캐릭터 : Gambler
+└Gambler : Crooked Penny 기본 아이템이며, 도박 컨셉을 가진 캐릭터 입니다. 또한 기본 운영 아이템과 시너지가 대폭 발생하는 Car Battery 획득시 제거 됩니다.
+ -Hush, Satan, Ultra Greed, Ultra Greedier : HP Max 대폭 증가
+
 ▶Chaos Greed Greedier 2.9(2)
  -일부 웨이브 난이도 하향
  -일부 세트 파츠 아이템이 황금방 및 상점에서 등장하던 현상 수정
  -일부 아이템들 이미지 스킨 올바르게 수정
  -CAT-O-NINE-TAILS : DMG 1 -> 2 증가
+ -신규 제거 배열 : Fruit Cake
 
 ▶Chaos Greed Greedier 2.9
  -스테이지 공통 : 웨이브 추가 확장
