@@ -1032,23 +1032,23 @@ bestiaryTransform="0,0,1" bestiaryAnim="Fly">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
 		<preload id="1000" variant="22" />
     </entity>
-    <entity anm2path="033.000_Fireplace.anm2" baseHP="5" boss="0" champion="1" collisionDamage="2" collisionMass="100" collisionRadius="13" friction="0.5" id="33" name="Fire Place" numGridCollisionPoints="0" shadowSize="0" stageHP="2.5" variant="0" shutdoors="false" portrait="68">
+    <entity anm2path="033.000_Fireplace.anm2" baseHP="5" boss="0" champion="1" collisionDamage="1" collisionMass="100" collisionRadius="13" friction="0.5" id="33" name="Fire Place" numGridCollisionPoints="0" shadowSize="0" stageHP="2.5" variant="0" shutdoors="false" portrait="68">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
 		<preload id="1000" variant="15" />
         <preload-snd id="261" /> <!-- SOUND_STEAM_HALFSEC -->
     </entity>
-    <entity anm2path="033.001_Red Fireplace.anm2" baseHP="5" boss="0" champion="1" collisionDamage="2" collisionMass="100" collisionRadius="13" friction="0.5" id="33" name="Red Fire Place" numGridCollisionPoints="0" shadowSize="0" stageHP="2.5" variant="1" shutdoors="false" portrait="68">
+    <entity anm2path="033.001_Red Fireplace.anm2" baseHP="5" boss="0" champion="1" collisionDamage="1" collisionMass="100" collisionRadius="13" friction="0.5" id="33" name="Red Fire Place" numGridCollisionPoints="0" shadowSize="0" stageHP="2.5" variant="1" shutdoors="false" portrait="68">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
 		<preload id="1000" variant="15" />
 		<preload id="9" variant="0" />
         <preload-snd id="261" /> <!-- SOUND_STEAM_HALFSEC -->
     </entity>
-    <entity anm2path="033.002_Blue Fireplace.anm2" baseHP="5" boss="0" champion="1" collisionDamage="2" collisionMass="100" collisionRadius="13" friction="0.5" id="33" name="Blue Fire Place" numGridCollisionPoints="0" shadowSize="0" stageHP="2.5" variant="2" shutdoors="false" portrait="68">
+    <entity anm2path="033.002_Blue Fireplace.anm2" baseHP="5" boss="0" champion="1" collisionDamage="1" collisionMass="100" collisionRadius="13" friction="0.5" id="33" name="Blue Fire Place" numGridCollisionPoints="0" shadowSize="0" stageHP="2.5" variant="2" shutdoors="false" portrait="68">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
 		<preload id="1000" variant="15" />
         <preload-snd id="261" /> <!-- SOUND_STEAM_HALFSEC -->
     </entity>
-    <entity anm2path="033.003_Purple Fireplace.anm2" baseHP="5" boss="0" champion="1" collisionDamage="2" collisionMass="100" collisionRadius="13" friction="0.5" id="33" name="Purple Fire Place" numGridCollisionPoints="0" shadowSize="0" stageHP="2.5" variant="3" shutdoors="false" portrait="68">
+    <entity anm2path="033.003_Purple Fireplace.anm2" baseHP="5" boss="0" champion="1" collisionDamage="1" collisionMass="100" collisionRadius="13" friction="0.5" id="33" name="Purple Fire Place" numGridCollisionPoints="0" shadowSize="0" stageHP="2.5" variant="3" shutdoors="false" portrait="68">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
 		<preload id="1000" variant="15" />
 		<preload id="9" variant="0" />

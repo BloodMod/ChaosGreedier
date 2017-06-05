@@ -13,8 +13,8 @@
 	<passive cache="damage range speed" description="All stats up!" devilprice="2" gfx="Collectibles_012_MagicMushroom.png" hearts="100" id="12" maxhearts="2" name="Magic Mushroom" />
 	<passive description="Poison touch" gfx="Collectibles_013_TheVirus.png" id="13" name="The Virus" />
 	<passive cache="range speed" description="Speed and range up" gfx="Collectibles_014_RoidRage.png" id="14" name="Roid Rage" />
-	<passive description="HP up" gfx="Collectibles_015_Heart.png" soulhearts="4" coins="2" bombs="2" keys="2" id="15" name="God Heart" />
-	<passive description="HP up" gfx="Collectibles_016_RawLiver.png" blackhearts="4" coins="2" bombs="2" keys="2" id="16" name="Nightmare Heart" />
+	<passive description="HP up" gfx="Collectibles_015_Heart.png" soulhearts="6" coins="3" bombs="3" keys="3" id="15" name="God Heart" />
+	<passive description="HP up" gfx="Collectibles_016_RawLiver.png" blackhearts="6" coins="3" bombs="3" keys="3" id="16" name="Nightmare Heart" />
 	<passive description="99 keys" devilprice="2" gfx="Collectibles_017_SkeletonKey.png" id="17" keys="10" special="false" name="Skeleton Key" />
 	<passive coins="99" description="$$$" devilprice="2" gfx="Collectibles_018_ADollar.png" id="18" keys="-99" bombs="-99" special="true" name="A Dollar" />
 	<passive bombs="10" description="10 bombs" gfx="Collectibles_019_Boom.png" id="19" name="Boom!" />
@@ -80,7 +80,7 @@
 	<passive cache="damage speed" description="DMG up" devilprice="2" gfx="Collectibles_079_TheMark.png" id="79" name="The Mark" soulhearts="2" />
 	<passive cache="damage firedelay" description="DMG + tears up" devilprice="2" gfx="Collectibles_080_ThePact.png" id="80" name="The Pact" soulhearts="4" />
 	<familiar description="9 lives" gfx="Collectibles_081_DeadCat.png" id="81" name="Dead Cat" />
-	<passive cache="flying" description="Demon wings" devilprice="2" gfx="Collectibles_082_LordOfThePit.png" blackhearts="6" id="82" name="Lord of the Pit" />
+	<passive cache="flying speed" description="Demon wings" devilprice="2" gfx="Collectibles_082_LordOfThePit.png" blackhearts="6" id="82" name="Lord of the Pit" />
 	<active achievement="9" cache="speed damage" description="Temporary demon form" devilprice="2" gfx="Collectibles_083_TheNail.png" id="83" maxcharges="10" name="The Nail" />
 	<active description="Reusable level skip" gfx="Collectibles_084_WeNeedToGoDeeper.png" id="84" maxcharges="6" name="We Need To Go Deeper!" />
 	<active description="Reusable card generator " gfx="Collectibles_085_DeckOfCards.png" id="85" maxcharges="6" name="Deck of Cards" />
@@ -461,7 +461,7 @@
 	<passive description="Hold me!" gfx="Collectibles_454_Polydactyly.png" id="454" name="Polydactyly" />
 	<passive achievement="307" cache="range" description="I remember this..." gfx="Collectibles_455_DadsLostCoin.png" id="455" name="Dad's Lost Coin" />
 	<passive description="Cleaner" gfx="Collectibles_456_MoldyBread.png" id="456" name="Cleaner" />
-	<passive description="Hard headed!" gfx="Collectibles_457_Conehead.png" id="457" name="Cone Head" soulhearts="2" />
+	<passive description="Hard headed!" gfx="Collectibles_457_Conehead.png" id="457" name="Cone Head" soulhearts="6" />
 	<passive description="Whats in there?" gfx="Collectibles_458_BellyButton.png" id="458" name="Belly Button" />
 	<passive description="Booger tears!" devilprice="2" gfx="Collectibles_459_SinusInfection.png" id="459" special="true" name="Sinus Infection" />
 	<passive description="Blind tears!" gfx="Collectibles_460_Glaucoma.png" id="460" name="Glaucoma" />

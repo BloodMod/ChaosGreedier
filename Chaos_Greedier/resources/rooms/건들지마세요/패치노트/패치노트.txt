@@ -34,13 +34,25 @@ https://goo.gl/uLkMCw
 - 동일 전적이 나왔을경우 랜덤을 선택해 기본 데미지 배수가 높은 캐릭터가 승리 (에축 적용 불가)
 - 로스트 캐릭터 플레이시 캐릭터가 변경되는 아이템 사용 불가능
 - Ultra Greed 방에서 알약, 카드, 룬 1회성 소모 아이템 모두 사용 불가
-- Keeper 캐릭터 Swallowed Penny 부적 사용시 패배 처리 (부활 이후 상관無)
+- Keeper, Samael, The Heretic 부활 금지
 - 물초코(초코 우유, 물, 차징템) 조합 사용 불가 (사용시 실격)
 예 : 텔레포트 2.0을 사용하지 않고 10웨이브 클리어후 다음 스테이지 진입시 해당 목숨 실격
 - 게임 시작직후 움직이기전 ESC 버튼을 1회 눌러 시드가 녹화된 후 플레이
 --------------------------------------------------------------------
+▶Chaos Greed Greedier 3.0(3)
+ -Greed Devil, Angel : Black Rune 추가
+ -Greed Depths : 난이도 대폭 감소
+ -Car Battery : 겜블러 이외에 캐릭터가 획득시에도 제거되던 현상 수정
+ -Lord of the Pit : Speed 0.3 추가
+ -Keeper, Samael, The Heretic : Clicker, Ankh, Judas' Shadow, Lazarus' Rags, Missing Poster(Trinket), Broken Ankh(Trinket) 획득시 제거
+ -Cone Head : Soulhearts 1 -> 3 증가
+ -Clover : Luck 14 -> 7 감소
+ -Fire Place : 피격 데미지 1 -> 0.5 변경
+ -God Heart, Nightmare Heart : 하트 및 픽업 개수 2 -> 3 증가
+
 ▶Chaos Greed Greedier 3.0(2)
  -Binky : 액티브 아이템이던 현상 수정
+
 ▶Chaos Greed Greedier 3.0
  -Samael : Black Hole 추가
  -Greed Shop(Stage) : Perthro 추가

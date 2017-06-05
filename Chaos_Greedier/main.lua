@@ -125,6 +125,9 @@ function ChaosGreed:Item1(player, cacheFlag) -- items.xml의 cacheFlag를 불러
 		if player:HasCollectible(26) then -- 26를 획득했을 시
 			player.MoveSpeed = player.MoveSpeed + 0.6 -- 스피드를 0.6 증가
 		end
+		if player:HasCollectible(82) then -- 82를 획득했을 시
+			player.MoveSpeed = player.MoveSpeed + 0.3 -- 스피드를 0.3 증가
+		end
 	end
 	if (cacheFlag == CacheFlag.CACHE_LUCK) then -- 아이템 획득 시 CacheFlag가 운이면
 		if player:HasCollectible(23) then -- 23 획득했을 시
@@ -137,7 +140,7 @@ function ChaosGreed:Item1(player, cacheFlag) -- items.xml의 cacheFlag를 불러
 			player.Luck  = player.Luck + 3 -- 럭 3 증가
 		end
 		if player:HasCollectible(449) then
-			player.Luck  = player.Luck + 14
+			player.Luck  = player.Luck + 7
 		end
 	end
 	if (cacheFlag == CacheFlag.CACHE_TEARFLAG) then
@@ -523,11 +526,44 @@ function ChaosGreed:Item2(currentPlayer) -- 패시브 설정용 함수
 			player:RemoveCollectible(115) -- 히오스 제거
 		end
 	end
-	if player:GetPlayerType(5) and player:HasCollectible(126) then --만약 플레이어가 이브(5)이고 만약 126(면도) 소지 시라면
+	if player:GetPlayerType() == 5 and player:HasCollectible(126) then --만약 플레이어가 이브(5)이고 만약 126(면도) 소지 시라면
 		player:AddCollectible(485,6,true)
 	end
-	if player:GetPlayerType(5) and player:HasCollectible(356) then 
+	if player:GetPlayerType() == 5 and player:HasCollectible(356) then 
 		player:RemoveCollectible(356)
+	end
+	if player:GetPlayerType() == 10 and player:HasCollectible(482) then
+		player:RemoveCollectible(482)
+	end
+	if player:GetPlayerType() == 10 and player:HasCollectible(332) then
+		player:RemoveCollectible(332)
+	end
+	if player:GetPlayerType() == 10 and player:HasCollectible(311) then
+		player:RemoveCollectible(311)
+	end
+	if player:GetPlayerType() == 10 and player:HasCollectible(161) then
+		player:RemoveCollectible(161)
+	end
+	if player:GetPlayerType() == 10 and player:GetTrinket(28) then
+		player:TryRemoveTrinket(28)
+	end
+	if player:GetPlayerType() == 14 and player:HasCollectible(482) then
+		player:RemoveCollectible(482)
+	end
+	if player:GetPlayerType() == 14 and player:HasCollectible(332) then
+		player:RemoveCollectible(332)
+	end
+	if player:GetPlayerType() == 14 and player:HasCollectible(311) then
+		player:RemoveCollectible(311)
+	end
+	if player:GetPlayerType() == 14 and player:HasCollectible(161) then
+		player:RemoveCollectible(161)
+	end
+	if player:GetPlayerType() == 14 and player:GetTrinket(23) then
+		player:TryRemoveTrinket(23)
+	end
+	if player:GetPlayerType() == 14 and player:GetTrinket(28) then
+		player:TryRemoveTrinket(28)
 	end
 	if player:GetTrinket(51) then -- 동일
 		player:TryRemoveTrinket(51)

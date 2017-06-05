@@ -1566,7 +1566,28 @@ function SamaelMod:knifeUpdate(knife)
   end
 end
 
-
+function SamaelMod:Item1(currentPlayer)
+	local player = Isaac.GetPlayer(0)
+	
+	if player:GetPlayerType() == samaelID and player:HasCollectible(482) then
+		player:RemoveCollectible(482)
+	end
+	if player:GetPlayerType() == samaelID and player:HasCollectible(332) then
+		player:RemoveCollectible(332)
+	end
+	if player:GetPlayerType() == samaelID and player:HasCollectible(311) then
+		player:RemoveCollectible(311)
+	end
+	if player:GetPlayerType() == samaelID and player:HasCollectible(161) then
+		player:RemoveCollectible(161)
+	end
+	if player:GetPlayerType() == samaelID and player:GetTrinket(23) then
+		player:TryRemoveTrinket(23)
+	end
+	if player:GetPlayerType() == samaelID and player:GetTrinket(28) then
+		player:TryRemoveTrinket(28)
+	end
+end
 
 SamaelMod:AddCallback(ModCallbacks.MC_USE_ITEM, SamaelMod.postReroll, CollectibleType.COLLECTIBLE_D4)
 SamaelMod:AddCallback(ModCallbacks.MC_USE_ITEM, SamaelMod.postReroll, CollectibleType.COLLECTIBLE_D100)
@@ -1583,3 +1604,4 @@ SamaelMod:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, SamaelMod.scytheHits)
 SamaelMod:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, SamaelMod.playerDamage, EntityType.ENTITY_PLAYER)
 SamaelMod:AddCallback(ModCallbacks.MC_POST_PLAYER_INIT, SamaelMod.PostPlayerInit)
 SamaelMod:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, SamaelMod.cacheUpdate)
+SamaelMod:AddCallback(ModCallbacks.MC_POST_UPDATE, SamaelMod.Item1, EntityType.ENTITY_PLAYER)
