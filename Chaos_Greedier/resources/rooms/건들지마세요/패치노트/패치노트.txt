@@ -38,7 +38,19 @@ https://goo.gl/uLkMCw
 - 물초코(초코 우유, 물, 차징템) 조합 사용 불가 (사용시 실격)
 예 : 텔레포트 2.0을 사용하지 않고 10웨이브 클리어후 다음 스테이지 진입시 해당 목숨 실격
 - 게임 시작직후 움직이기전 ESC 버튼을 1회 눌러 시드가 녹화된 후 플레이
+- 모든 
 --------------------------------------------------------------------
+▶Chaos Greed Greedier 3.0(4)
+ -Larval Therapy : DMG x0.066 -> x4 변경, 확률 30% -> Luck14 = 100%
+ -Steven : DMG 1 -> 2 증가
+ -Blood of the Martyr : 획득시 Eye of Belial(Calling)
+ -Bum Friend : Coins +99, Bombs, Keys -99
+ -Key Bum : Keys +5
+ -The Hourglass : 지속시간 7.6 -> 20 증가, Speed +2.0
+ -신규 제거 배열 해제 : The Hourglass, Bum Friend, Key Bum
+ -신규 보스 : Conscivit 추가
+ -획득전 아이템의 배열 및 효과 확인 가능 (아이템 주변에 가면 텍스트가 뜨는 기능은 현재 기본 아이템으로 설정되어 있으며, 추후 카그리디어 모드 기준으로 변경할 예정 입니다.)
+
 ▶Chaos Greed Greedier 3.0(3)
  -Greed Devil, Angel : Black Rune 추가
  -Greed Depths : 난이도 대폭 감소
@@ -493,6 +505,7 @@ https://goo.gl/uLkMCw
 Greed Devil, Devil, Greed Golden Chest, Golden Chest, Curse
 Greed Angel, Angel, Library, Bomb bum
 Red Chest, Greed Curse
+Greed Shop, Greed Treasure, Greed Library, Shop
 
 //Unknown
  -신규 아이템 : Refined Destructive Magic Stone Bracelet(정제된 마석의 팔찌), Refined Chaos Stone Necklace(정제된 마석의 목걸이), Refined Amnesia Stone Ring(정제된 마석의 반지)

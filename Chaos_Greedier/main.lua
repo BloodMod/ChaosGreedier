@@ -128,6 +128,9 @@ function ChaosGreed:Item1(player, cacheFlag) -- items.xml의 cacheFlag를 불러
 		if player:HasCollectible(82) then -- 82를 획득했을 시
 			player.MoveSpeed = player.MoveSpeed + 0.3 -- 스피드를 0.3 증가
 		end
+		if player:HasCollectible(66) then 
+			player.MoveSpeed = player.MoveSpeed + 2.0 
+		end
 	end
 	if (cacheFlag == CacheFlag.CACHE_LUCK) then -- 아이템 획득 시 CacheFlag가 운이면
 		if player:HasCollectible(23) then -- 23 획득했을 시
@@ -335,6 +338,12 @@ function ChaosGreed:Item2(currentPlayer) -- 패시브 설정용 함수
 	if player:HasCollectible(508)==true and player:GetCollectibleNum(508)<3 then 
 		player:AddCollectible(508,0,true)
 	end
+	if player:HasCollectible(50)==true and player:GetCollectibleNum(50)<2 then 
+		player:AddCollectible(50,0,true)
+	end
+	if player:HasCollectible(7)==true and player:HasCollectible(462)==false then 
+		player:AddCollectible(462,0,true) 
+	end
 	if player:HasCollectible(119)==true then -- 119를 획득하면(앱솔루트 구피)
 		if player:HasCollectible(134)==false then -- 134를 획득하지 않았을 때
 			player:AddCollectible(134,0,true) -- 134 획득
@@ -384,29 +393,8 @@ function ChaosGreed:Item2(currentPlayer) -- 패시브 설정용 함수
 		end
 	end
 	if player:HasCollectible(9)==true then -- 앱솔루트 파리셋
-		if player:HasCollectible(57)==false then
-			player:AddCollectible(57,0,true)
-		end
-		if player:HasCollectible(128)==false then
-			player:AddCollectible(128,0,true)
-		end
 		if player:HasCollectible(264)==false then
 			player:AddCollectible(264,0,true)
-		end
-		if player:HasCollectible(274)==false then
-			player:AddCollectible(274,0,true)
-		end
-		if player:HasCollectible(279)==false then
-			player:AddCollectible(279,0,true)
-		end
-		if player:HasCollectible(364)==false then
-			player:AddCollectible(364,0,true)
-		end
-		if player:HasCollectible(365)==false then
-			player:AddCollectible(365,0,true)
-		end
-		if player:HasCollectible(426)==false then
-			player:AddCollectible(426,0,true)
 		end
 		if player:HasCollectible(492)==false then
 			player:AddCollectible(492,0,true)
@@ -723,24 +711,45 @@ function ChaosGreed:npcHit(dmg_target , dmg_amount, dmg_source, dmg_dealer)
     local flag = false
 
     if player:HasCollectible(chiggers_item) and dmg_target:IsVulnerableEnemy() then
-        if dmg_dealer.Type == EntityType.ENTITY_TEAR and math.random()<0.3 then
-            local spd = 5.0 + math.random()
-            local ang = math.rad(math.random() * 360)
-            local s = Game():Spawn(3, 802, dmg_target.Position+Vector(math.cos(ang)*spd,math.sin(ang)*spd), Vector(math.cos(ang)*spd,math.sin(ang)*spd), player, 0, player.InitSeed)
-            s.CollisionDamage = dmg_amount / 15.0
-        end
-        if dmg_dealer.Type == EntityType.ENTITY_LASER then
-            local spd = 5.0 + math.random()
-            local ang = math.rad(math.random() * 360)
-            local s = Game():Spawn(3, 802, dmg_target.Position+Vector(math.cos(ang)*spd,math.sin(ang)*spd), Vector(math.cos(ang)*spd,math.sin(ang)*spd), player, 0, player.InitSeed)
-            s.CollisionDamage = dmg_amount / 5.0
-        end
-        if dmg_dealer.Type == EntityType.ENTITY_KNIFE and dmg_target.FrameCount % 3 == 0 then
-            local spd = 5.0 + math.random()
-            local ang = math.rad(math.random() * 360)
-            local s = Game():Spawn(3, 802, dmg_target.Position+Vector(math.cos(ang)*spd,math.sin(ang)*spd), Vector(math.cos(ang)*spd,math.sin(ang)*spd), player, 0, player.InitSeed)
-            s.CollisionDamage = dmg_amount / 10.0
-        end
+        if player.Luck >= 14 then
+			if dmg_dealer.Type == EntityType.ENTITY_TEAR then
+				local spd = 5.0 + math.random()
+				local ang = math.rad(math.random() * 360)
+				local s = Game():Spawn(3, 802, dmg_target.Position+Vector(math.cos(ang)*spd,math.sin(ang)*spd), Vector(math.cos(ang)*spd,math.sin(ang)*spd), player, 0, player.InitSeed)
+				s.CollisionDamage = dmg_amount * 4
+			end
+			if dmg_dealer.Type == EntityType.ENTITY_LASER then
+				local spd = 5.0 + math.random()
+				local ang = math.rad(math.random() * 360)
+				local s = Game():Spawn(3, 802, dmg_target.Position+Vector(math.cos(ang)*spd,math.sin(ang)*spd), Vector(math.cos(ang)*spd,math.sin(ang)*spd), player, 0, player.InitSeed)
+				s.CollisionDamage = dmg_amount * 4
+			end
+			if dmg_dealer.Type == EntityType.ENTITY_KNIFE and dmg_target.FrameCount % 3 == 0 then
+				local spd = 5.0 + math.random()
+				local ang = math.rad(math.random() * 360)
+				local s = Game():Spawn(3, 802, dmg_target.Position+Vector(math.cos(ang)*spd,math.sin(ang)*spd), Vector(math.cos(ang)*spd,math.sin(ang)*spd), player, 0, player.InitSeed)
+				s.CollisionDamage = dmg_amount * 4
+			end
+		else
+			if dmg_dealer.Type == EntityType.ENTITY_TEAR and math.random(1,15-player.Luck)<=1 then
+				local spd = 5.0 + math.random()
+				local ang = math.rad(math.random() * 360)
+				local s = Game():Spawn(3, 802, dmg_target.Position+Vector(math.cos(ang)*spd,math.sin(ang)*spd), Vector(math.cos(ang)*spd,math.sin(ang)*spd), player, 0, player.InitSeed)
+				s.CollisionDamage = dmg_amount * 4
+			end
+			if dmg_dealer.Type == EntityType.ENTITY_LASER and math.random(1,15-player.Luck)<=1 then
+				local spd = 5.0 + math.random()
+				local ang = math.rad(math.random() * 360)
+				local s = Game():Spawn(3, 802, dmg_target.Position+Vector(math.cos(ang)*spd,math.sin(ang)*spd), Vector(math.cos(ang)*spd,math.sin(ang)*spd), player, 0, player.InitSeed)
+				s.CollisionDamage = dmg_amount * 4
+			end
+			if dmg_dealer.Type == EntityType.ENTITY_KNIFE and dmg_target.FrameCount % 3 == 0 and math.random(1,15-player.Luck)<=1 then
+				local spd = 5.0 + math.random()
+				local ang = math.rad(math.random() * 360)
+				local s = Game():Spawn(3, 802, dmg_target.Position+Vector(math.cos(ang)*spd,math.sin(ang)*spd), Vector(math.cos(ang)*spd,math.sin(ang)*spd), player, 0, player.InitSeed)
+				s.CollisionDamage = dmg_amount * 4
+			end
+		end
     end
 
     if dmg_source == 0 then

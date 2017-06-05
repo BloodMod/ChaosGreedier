@@ -64,7 +64,7 @@
 	<passive description="Stores energy" gfx="Collectibles_063_TheBattery.png" id="63" name="The Battery" />
 	<passive description="50% off" devilprice="2" gfx="Collectibles_064_SteamSale.png" id="64" special="true" name="Steam Sale" />
 	<active cooldown="35" description="Summon bombs" gfx="Collectibles_065_AnarchistCookbook.png" id="65" maxcharges="3" name="Anarchist Cookbook" />
-	<active cooldown="230" description="Temporary enemy slowdown" gfx="Collectibles_066_TheHourglass.png" id="66" maxcharges="2" name="The Hourglass" />
+	<active cache="speed" cooldown="600" description="Temporary enemy slowdown" gfx="Collectibles_066_TheHourglass.png" id="66" maxcharges="4" name="The Hourglass" />
 	<familiar description="Friends 'till the end" gfx="Collectibles_067_SisterMaggy.png" id="67" name="Sister Maggy" />
 	<passive cache="all" description="Laser tears" devilprice="2" gfx="Collectibles_068_Technology.png" id="68" name="Technology" />
 	<passive cache="all" description="Charge shots" devilprice="2" gfx="Collectibles_069_ChocolateMilk.png" id="69" special="true" name="Chocolate Milk" />
@@ -142,7 +142,7 @@
 	<passive description="Ultimate grand supreme" gfx="Collectibles_141_PageantBoy.png" id="141" coins="8" name="Pageant Boy" />
 	<passive description="You have been blessed" gfx="Collectibles_142_Scapular.png" id="142" name="Scapular" />
 	<passive cache="speed shotspeed" description="Speed + shot speed up" gfx="Collectibles_143_Speedball.png" id="143" name="Speed Ball" />
-	<familiar description="He's greedy" gfx="Collectibles_144_BumFriend.png" id="144" name="Bum Friend" />
+	<familiar description="He's greedy" gfx="Collectibles_144_BumFriend.png" id="144" coins="99" keys="-99" bombs="-99" name="Bum Friend" />
 	<active description="Reusable fly hive" gfx="Collectibles_145_GuppysHead.png" id="145" maxcharges="1" name="Guppy's Head" />
 	<active description="Reusable eternity " gfx="Collectibles_146_PrayerCard.png" id="146" maxcharges="6" name="Prayer Card" />
 	<active description="Rocks don't stand a chance" gfx="Collectibles_147_NotchedAxe.png" id="147" maxcharges="3" name="Notched Axe" />
@@ -223,7 +223,7 @@
 	<passive bombs="5" description="Tear blasts +5 bombs" gfx="collectibles_220_sadbombs.png" id="220" name="Sad Bombs" />
 	<active achievement="150" cache="tearcolor tearflag" description="Bouncing tears" devilprice="2" gfx="collectibles_221_rubbercement.png" special="true" id="221" maxcharges="0" name="Rubber Cement" />
 	<passive cache="firedelay tearflag" description="Anti-gravity tears + tears up" gfx="collectibles_222_antigravity.png" id="222" name="Anti-Gravity" />
-	<passive bombs="5" description="It hurts so good +5 bombs" gfx="collectibles_223_pyromaniac.png" id="223" name="Pyromaniac" special="false" />
+	<passive bombs="5" description="It hurts so good +5 bombs" gfx="collectibles_223_pyromaniac.png" id="223" name="Pyromaniac" special="true" />
 	<passive cache="firedelay range tearflag" description="Splash damage + tears up" devilprice="2" gfx="collectibles_224_cricketsbody.png" id="224" special="true" name="Cricket's Body" />
 	<passive description="Sweet suffering" gfx="collectibles_225_gimpy.png" id="225" name="Gimpy" />
 	<passive blackhearts="2" description="HP up x3" gfx="collectibles_226_blacklotus.png" hearts="2" id="226" maxhearts="2" name="Black Lotus" soulhearts="2" />
@@ -389,7 +389,7 @@
 	<familiar description="Bumbo want coin!" gfx="Collectibles_385_Bumbo.png" id="385" name="Bumbo" />
 	<active achievement="181" description="Rerolls rocks" gfx="Collectibles_386_D12.png" id="386" maxcharges="3" name="D12" />
 	<familiar achievement="193" description="Peace be with you" gfx="Collectibles_387_Censer.png" id="387" name="Censer" />
-	<familiar achievement="200" description="He wants your keys!" gfx="Collectibles_388_KeyBum.png" id="388" name="Key Bum" />
+	<familiar achievement="200" description="He wants your keys!" gfx="Collectibles_388_KeyBum.png" id="388" keys="5" name="Key Bum" />
 	<familiar achievement="218" description="Rune generator" devilprice="2" gfx="Collectibles_389_RuneBag.png" id="389" special="true" name="Rune Bag" />
 	<familiar description="Sworn friend" gfx="Collectibles_390_Seraphim.png" id="390" name="Seraphim" />
 	<passive achievement="182" description="Turn your enemy" gfx="Collectibles_391_Betrayal.png" id="391" name="Betrayal" />

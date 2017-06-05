@@ -2959,7 +2959,7 @@ bestiaryOverlay="Attack">
 	<entity id="288" variant="0" subtype="10" name="Cornopsy" reroll="true" baseHP="150" boss="1" bossID="500" champion="0" collisionDamage="2" collisionMass="25" collisionRadius="20" friction="0.8" numGridCollisionPoints="12" shadowSize="17" portrait="146" anm2path="godmode_41_cornopsy.anm2" shutdoors="true" gridCollision="walls">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
-	<entity id="287" variant="0" subtype="20" name="Conscivit" baseHP="70000" stageHP="0" boss="1" champion="1" bossID="501" collisionDamage="12" collisionMass="9999" collisionRadius="40" friction="1" numGridCollisionPoints="12" shadowSize="42" portrait="134" anm2path="godmode_final_conscivit.anm2">
+	<entity id="287" variant="0" subtype="20" name="Conscivit" baseHP="50000" stageHP="0" boss="1" champion="1" bossID="501" collisionDamage="12" collisionMass="9999" collisionRadius="40" friction="1" numGridCollisionPoints="12" shadowSize="42" portrait="134" anm2path="godmode_final_conscivit.anm2">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
 	<entity anm2path="godmode_final_lostsoul.anm2" subtype="20" reroll="false" baseHP="0" boss="0" champion="0" collisionDamage="2" collisionMass="0" collisionRadius="13" friction="1.05" id="259" name="Lost Soul" numGridCollisionPoints="0" shutdoors="false" shadowSize="16" variant="0" portrait="121">

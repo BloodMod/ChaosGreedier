@@ -4,7 +4,6 @@ COLOR %cc%
 ECHO %cc%
 start Chaos_Greedier\resources\rooms\건들지마세요\패치노트\패치노트.txt
 
-explorer "http://fav.afreecatv.com:8057/afreeca/favorite_api.php?szWork=ADD&nAspCode=0&szBjld=iwt2hw&favorite=iwt2hw&from=app"
 :First
 cls
 ECHO http://afreeca.com/iwt2hw
