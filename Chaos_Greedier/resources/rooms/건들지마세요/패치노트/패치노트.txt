@@ -40,6 +40,13 @@ https://goo.gl/uLkMCw
 - 게임 시작직후 움직이기전 ESC 버튼을 1회 눌러 시드가 녹화된 후 플레이
 - 모든 
 --------------------------------------------------------------------
+▶Chaos Greed Greedier 3.1
+ -The Depths : 일부 웨이브 난이도 하향
+ -일부 아이템 이미지가 비정상적이던 현상 수정
+ -The Shop(Stage) : 11웨이브 보스 몬스터가 등장하지 않던 현상 수정
+ -The Hourglass : 지속시간 20초 -> 6초 감소 (Stop Water 동일합니다.)
+ -신규 레어 해제 아이템 : Jacob's Ladder, Rubber Cement
+
 ▶Chaos Greed Greedier 3.0(4)
  -Larval Therapy : DMG x0.066 -> x4 변경, 확률 30% -> Luck14 = 100%
  -Steven : DMG 1 -> 2 증가

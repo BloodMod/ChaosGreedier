@@ -64,7 +64,7 @@
 	<passive description="Stores energy" gfx="Collectibles_063_TheBattery.png" id="63" name="The Battery" />
 	<passive description="50% off" devilprice="2" gfx="Collectibles_064_SteamSale.png" id="64" special="true" name="Steam Sale" />
 	<active cooldown="35" description="Summon bombs" gfx="Collectibles_065_AnarchistCookbook.png" id="65" maxcharges="3" name="Anarchist Cookbook" />
-	<active cache="speed" cooldown="600" description="Temporary enemy slowdown" gfx="Collectibles_066_TheHourglass.png" id="66" maxcharges="4" name="The Hourglass" />
+	<active cache="speed" cooldown="180" description="Temporary enemy slowdown" gfx="Collectibles_066_TheHourglass.png" id="66" maxcharges="4" name="The Hourglass" />
 	<familiar description="Friends 'till the end" gfx="Collectibles_067_SisterMaggy.png" id="67" name="Sister Maggy" />
 	<passive cache="all" description="Laser tears" devilprice="2" gfx="Collectibles_068_Technology.png" id="68" name="Technology" />
 	<passive cache="all" description="Charge shots" devilprice="2" gfx="Collectibles_069_ChocolateMilk.png" id="69" special="true" name="Chocolate Milk" />
@@ -221,7 +221,7 @@
 	<passive description="Regeneration + HP up" gfx="collectibles_218_placenta.png" hearts="2" id="218" maxhearts="2" name="Placenta" />
 	<passive description="HP up" gfx="collectibles_219_oldbandage.png" id="219" maxhearts="2" name="Old Bandage" />
 	<passive bombs="5" description="Tear blasts +5 bombs" gfx="collectibles_220_sadbombs.png" id="220" name="Sad Bombs" />
-	<active achievement="150" cache="tearcolor tearflag" description="Bouncing tears" devilprice="2" gfx="collectibles_221_rubbercement.png" special="true" id="221" maxcharges="0" name="Rubber Cement" />
+	<active achievement="150" cache="tearcolor tearflag" description="Bouncing tears" devilprice="2" gfx="collectibles_221_rubbercement.png" special="false" id="221" maxcharges="0" name="Rubber Cement" />
 	<passive cache="firedelay tearflag" description="Anti-gravity tears + tears up" gfx="collectibles_222_antigravity.png" id="222" name="Anti-Gravity" />
 	<passive bombs="5" description="It hurts so good +5 bombs" gfx="collectibles_223_pyromaniac.png" id="223" name="Pyromaniac" special="true" />
 	<passive cache="firedelay range tearflag" description="Splash damage + tears up" devilprice="2" gfx="collectibles_224_cricketsbody.png" id="224" special="true" name="Cricket's Body" />
@@ -499,7 +499,7 @@
 	<familiar description="Pills pills pills!" gfx="collectibles_491_acidbaby.png" id="491" name="Acid Baby" />
 	<familiar cache="luck" description="Yo listen!" gfx="collectibles_492_yolisten.png" id="492" bombs="3" name="YO LISTEN!" />
 	<passive description="Panic - power" gfx="collectibles_493_adderline.png" id="493" soulhearts="-12" name="Adrenaline Shock" />
-	<active cache="tearflag" description="Electric tears" devilprice="2" gfx="collectibles_494_jacobsladder.png" id="494" special="true" maxcharges="0" name="Jacob's Ladder" />
+	<active cache="tearflag" description="Electric tears" devilprice="2" gfx="collectibles_494_jacobsladder.png" id="494" special="false" maxcharges="0" name="Jacob's Ladder" />
 	<passive description="Flame tears" gfx="collectibles_495_ghostpepper.png" id="495" name="Ghost Pepper" />
 	<active achievement="292" description="Needle shot" gfx="collectibles_496_euthanasia.png" id="496" special="true" maxcharges="0" devilprice="2" name="Euthanasia" />
 	<passive description="Camo kid" gfx="collectibles_497_camoundies.png" id="497" name="Camo Undies" />
