@@ -93,14 +93,25 @@ function ChaosGreed:Item1(player, cacheFlag) -- items.xml의 cacheFlag를 불러
 				player.Damage = player.Damage * 2 -- 그냥 2배
 			end
 		end
-		if player:HasCollectible(54) then
-			player.Damage = player.Damage + 3
-		end
-		if player:HasCollectible(21) or player:HasCollectible(26) or player:HasCollectible(54) then
+		if player:HasCollectible(21) then
 			if player:HasCollectible(149) then
-				player.Damage = ((player.Damage-40)*1.4)+40 -- 40 먼저 빼고 1.4를 곱해서 다시 40 더한다.
+				player.Damage = ((player.Damage-40)*1.2)+40 -- 40 먼저 빼고 1.2를 곱해서 다시 40 더한다.
 			else -- 아니면
-				player.Damage = player.Damage * 1.4 -- 그냥 1.4배
+				player.Damage = player.Damage * 1.2 -- 그냥 1.2배
+			end
+		end
+		if player:HasCollectible(26) then
+			if player:HasCollectible(149) then
+				player.Damage = ((player.Damage-40)*1.2)+40 -- 40 먼저 빼고 1.2를 곱해서 다시 40 더한다.
+			else -- 아니면
+				player.Damage = player.Damage * 1.2 -- 그냥 1.2배
+			end
+		end
+		if player:HasCollectible(54) then
+			if player:HasCollectible(149) then
+				player.Damage = ((player.Damage-40)*1.2)+40 -- 40 먼저 빼고 1.2를 곱해서 다시 40 더한다.
+			else -- 아니면
+				player.Damage = player.Damage * 1.2 -- 그냥 1.2배
 			end
 		end
 		if player:HasCollectible(317) then
@@ -111,9 +122,6 @@ function ChaosGreed:Item1(player, cacheFlag) -- items.xml의 cacheFlag를 불러
 		if player:HasCollectible(24) then -- 24를 획득했을 시
 			player.TearHeight = player.TearHeight - 5.25 -- 사거리를 5.25 증가(마이너스가 될 수록 멀리)
 		end
-		if player:HasCollectible(26) then -- 26를 획득했을 시
-			player.TearHeight = player.TearHeight - 5.25 -- 사거리를 5.25 증가(마이너스가 될 수록 멀리)
-		end
 	end
 	if (cacheFlag == CacheFlag.CACHE_SPEED) then -- 아이템 획득 시 cacheFlag가 스피드면
 		if player:HasCollectible(24) then -- 24를 획득했을 시
@@ -121,9 +129,6 @@ function ChaosGreed:Item1(player, cacheFlag) -- items.xml의 cacheFlag를 불러
 		end
 		if player:HasCollectible(25) then -- 25를 획득했을 시
 			player.MoveSpeed = player.MoveSpeed + (0.2 * player:GetCollectibleNum(25)) -- 0.2의 스피드를 25를 획득한 수 만큼 증가
-		end
-		if player:HasCollectible(26) then -- 26를 획득했을 시
-			player.MoveSpeed = player.MoveSpeed + 0.6 -- 스피드를 0.6 증가
 		end
 		if player:HasCollectible(82) then -- 82를 획득했을 시
 			player.MoveSpeed = player.MoveSpeed + 0.3 -- 스피드를 0.3 증가
@@ -139,9 +144,6 @@ function ChaosGreed:Item1(player, cacheFlag) -- items.xml의 cacheFlag를 불러
 		if player:HasCollectible(46) then -- 46 획득했을 시
 			player.Luck  = player.Luck + 4 -- 럭 4 증가
 		end
-		if player:HasCollectible(21) then -- 21 획득했을 시
-			player.Luck  = player.Luck + 3 -- 럭 3 증가
-		end
 		if player:HasCollectible(449) then
 			player.Luck  = player.Luck + 7
 		end
@@ -149,35 +151,27 @@ function ChaosGreed:Item1(player, cacheFlag) -- items.xml의 cacheFlag를 불러
 	if (cacheFlag == CacheFlag.CACHE_TEARFLAG) then
 		if player:HasCollectible(339) then -- 339 획득
 			player.TearFlags = getFlag({38}, player.TearFlags); -- 38번 플래그를 줌
-			debug_text = player.TearFlags;
 		end
 		if player:HasCollectible(401) then -- 401 획득
 			player.TearFlags = getFlag({36}, player.TearFlags); -- 36번 플래그를 줌
-			debug_text = player.TearFlags;
 		end
 		if player:HasCollectible(29) then -- 29 획득
 			player.TearFlags = getFlag({14}, player.TearFlags); -- 14번 플래그를 줌
-			debug_text = player.TearFlags;
 		end
 		if player:HasCollectible(30) then -- 30 획득
 			player.TearFlags = getFlag({21}, player.TearFlags); -- 21번 플래그를 줌
-			debug_text = player.TearFlags;
 		end
 		if player:HasCollectible(148) then 
 			player.TearFlags = getFlag({48}, player.TearFlags); 
-			debug_text = player.TearFlags;
 		end
 		if player:HasCollectible(29) or player:HasCollectible(30) or player:HasCollectible(31) then --29,30,31번 중 하나라도 소지 시
 			player.TearFlags = getFlag({2}, player.TearFlags); -- 2번 플래그를 줌
-			debug_text = player.TearFlags;
 		end
 		if player:HasCollectible(29) and player:HasCollectible(30) and player:HasCollectible(31) then -- 29,30,31 소지 시
 			player.TearFlags = getFlag({33}, player.TearFlags); -- 33번 플래그를 줌
-			debug_text = player.TearFlags;
 		end
 		if player:HasCollectible(428) then 
 			player.TearFlags = getFlag({2,3,4,14,15,21}, player.TearFlags); 
-			debug_text = player.TearFlags;
 		end
 	end
 	if (cacheFlag == CacheFlag.CACHE_FLYING) then
@@ -344,6 +338,21 @@ function ChaosGreed:Item2(currentPlayer) -- 패시브 설정용 함수
 	if player:HasCollectible(7)==true and player:HasCollectible(462)==false then 
 		player:AddCollectible(462,0,true) 
 	end
+	if player:HasCollectible(79)==true and player:GetCollectibleNum(79)<10 then 
+		player:AddCollectible(79,0,true)
+	end
+	if player:HasCollectible(80)==true and player:GetCollectibleNum(80)<10 then 
+		player:AddCollectible(80,0,true)
+	end
+	if player:HasCollectible(399)==true and player:GetCollectibleNum(399)<5 then 
+		player:AddCollectible(399,0,true)
+	end
+	if player:HasCollectible(21) and player:HasCollectible(26) and player:HasCollectible(54) and player:HasCollectible(182) == false then
+		player:RemoveCollectible(21)
+		player:RemoveCollectible(26)
+		player:RemoveCollectible(54)
+		player:AddCollectible(182,0,true)
+	end
 	if player:HasCollectible(119)==true then -- 119를 획득하면(앱솔루트 구피)
 		if player:HasCollectible(134)==false then -- 134를 획득하지 않았을 때
 			player:AddCollectible(134,0,true) -- 134 획득
@@ -472,13 +481,16 @@ function ChaosGreed:Item2(currentPlayer) -- 패시브 설정용 함수
 		if player:HasCollectible(168) then -- 에픽 소지 시
 			player:RemoveCollectible(168) -- 에픽 제거
 		end
+		if player:HasCollectible(233) then -- 플래닛 소지 시
+			player:RemoveCollectible(233) -- 플래닛 제거
+		end
 		if player:HasCollectible(329) then -- 루도비코 소지 시
 			player:RemoveCollectible(329) -- 루도비코 제거
 		end
 		if player:HasCollectible(395) then -- 테크엑스 소지 시
 			player:RemoveCollectible(395) -- 테크엑스 제거
 		end
-		if player:HasCollectible(52) == false and player:HasCollectible(68) == false and player:HasCollectible(114) == false and player:HasCollectible(118) == false and player:HasCollectible(129) == false and player:HasCollectible(149) == false and player:HasCollectible(152) == false and player:HasCollectible(168) == false and player:HasCollectible(329) == false and player:HasCollectible(395) == false then -- 공격 변화 아이템이 없는 경우
+		if player:HasCollectible(52) == false and player:HasCollectible(68) == false and player:HasCollectible(114) == false and player:HasCollectible(118) == false and player:HasCollectible(129) == false and player:HasCollectible(149) == false and player:HasCollectible(152) == false and player:HasCollectible(168) == false and player:HasCollectible(233) == false and player:HasCollectible(329) == false and player:HasCollectible(395) == false then -- 공격 변화 아이템이 없는 경우
 			player:RemoveCollectible(456) -- 클리너 제거
 		end
 	end
@@ -520,6 +532,9 @@ function ChaosGreed:Item2(currentPlayer) -- 패시브 설정용 함수
 	if player:GetPlayerType() == 5 and player:HasCollectible(356) then 
 		player:RemoveCollectible(356)
 	end
+	if player:GetPlayerType() == 14 and player:HasCollectible(349) then 
+		player:AddCollectible(66,4,true)
+	end
 	if player:GetPlayerType() == 10 and player:HasCollectible(482) then
 		player:RemoveCollectible(482)
 	end
@@ -552,6 +567,12 @@ function ChaosGreed:Item2(currentPlayer) -- 패시브 설정용 함수
 	end
 	if player:GetPlayerType() == 14 and player:GetTrinket(28) then
 		player:TryRemoveTrinket(28)
+	end
+	if player:GetPlayerType() == 14 and player:HasCollectible(227) then
+		player:RemoveCollectible(227)
+	end
+	if player:GetPlayerType() == 14 and player:GetTrinket(1) then
+		player:TryRemoveTrinket(1)
 	end
 	if player:GetTrinket(51) then -- 동일
 		player:TryRemoveTrinket(51)

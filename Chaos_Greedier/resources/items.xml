@@ -7,7 +7,7 @@
 	<passive cache="firedelay range tearcolor" description="Tears up" gfx="Collectibles_006_NumberOne.png" id="6" name="Number One" />
 	<passive cache="damage" description="DMG up" gfx="Collectibles_007_BloodOfTheMartyr.png" id="7" name="Blood of the Martyr" />
 	<familiar description="Friends 'till the end" gfx="Collectibles_008_BrotherBobby.png" id="8" name="Brother Bobby" />
-	<passive description="Absolute Inzektor" devilprice="2" gfx="Collectibles_009_Skatole.png" id="9" special="true" name="Absolute Inzektor" />
+	<passive description="Absolute Inzektor" devilprice="2" gfx="Collectibles_009_Skatole.png" id="9" special="false" name="Absolute Inzektor" />
 	<familiar description="Projectile protection " gfx="Collectibles_010_HaloOfFlies.png" id="10" name="Halo of Flies" />
 	<familiar description="Extra life" gfx="Collectibles_011_1Up.png" id="11" name="1up!" />
 	<passive cache="damage range speed" description="All stats up!" devilprice="2" gfx="Collectibles_012_MagicMushroom.png" hearts="100" id="12" maxhearts="2" name="Magic Mushroom" />
@@ -19,12 +19,12 @@
 	<passive coins="99" description="$$$" devilprice="2" gfx="Collectibles_018_ADollar.png" id="18" keys="-99" bombs="-99" special="true" name="A Dollar" />
 	<passive bombs="10" description="10 bombs" gfx="Collectibles_019_Boom.png" id="19" name="Boom!" />
 	<passive achievement="8" cache="flying" description="We all float down here..." gfx="Collectibles_020_Transcendence.png" id="20" name="Transcendence" />
-	<active cache="damage luck" description="Symbol Of Babylonia" devilprice="2" gfx="Collectibles_021_TheCompass.png" id="21" maxcharges="0" name="Symbol Of Babylonia" />
+	<passive cache="damage luck" description="Symbol Of Babylonia" devilprice="2" gfx="Collectibles_021_TheCompass.png" id="21" maxcharges="0" name="Symbol Of Babylonia" />
 	<passive cache="damage" description="Ecstatic State Of 5 Senses" devilprice="2" gfx="Collectibles_022_Lunch.png" id="22" name="Venus's Breath" />
 	<passive cache="damage luck" description="Ecstatic State Of 5 Senses" devilprice="2" gfx="Collectibles_023_Dinner.png" id="23" name="Scent Of Glitter" />
 	<passive cache="range speed damage" description="Ecstatic State Of 5 Senses" devilprice="2" gfx="Collectibles_024_Dessert.png"  id="24" name="Memory Of Water" />
 	<passive cache="damage speed" description="Drrrrrr..." gfx="Collectibles_025_Breakfast.png" coins="15" id="25" name="Millstone" />
-	<active cache="damage range speed" description="Fars's Golden Goblet" devilprice="2" gfx="Collectibles_026_RottenMeat.png" id="26" maxcharges="0" name="Fars's Golden Goblet" />
+	<passive cache="damage range speed" description="Fars's Golden Goblet" devilprice="2" gfx="Collectibles_026_RottenMeat.png" id="26" maxcharges="0" name="Fars's Golden Goblet" />
 	<passive cache="speed" description="Speed up" gfx="Collectibles_027_WoodenSpoon.png" id="27" name="Wooden Spoon" />
 	<passive cache="speed" description="Speed up" gfx="Collectibles_028_TheBelt.png" id="28" name="The Belt" />
 	<passive cache="tearflag" description="Solium Fons" gfx="Collectibles_029_MomsUnderwear.png" id="29" devilprice="2" name="Solium Fons" />
@@ -52,7 +52,7 @@
 	<passive cache="damage" description="DMG up" gfx="Collectibles_051_Pentagram.png" id="51" blackhearts="2" name="Pentagram" />
 	<passive achievement="11" cache="all" description="Absolute Explosion" devilprice="2" gfx="Collectibles_052_DrFetus.png" id="52" name="Absolute Explosion" special="false" />
 	<passive description="Item snatcher" gfx="Collectibles_053_Magneto.png" id="53" name="Magneto" />
-	<active  cache="damage" description="Rosetta Stone" devilprice="2" gfx="Collectibles_054_TreasureMap.png" id="54" maxcharges="0" name="Rosetta Stone" />
+	<passive cache="damage" description="Rosetta Stone" devilprice="2" gfx="Collectibles_054_TreasureMap.png" id="54" maxcharges="0" name="Rosetta Stone" />
 	<passive description="Eye in the back of your head" gfx="Collectibles_055_MomsEye.png" id="55" name="Mom's Eye" />
 	<active description="Oops..." gfx="Collectibles_056_LemonMishap.png" id="56" maxcharges="2" name="Lemon Mishap" />
 	<familiar description="Attack fly" gfx="Collectibles_057_DistantAdmiration.png" id="57" name="Distant Admiration" />
@@ -77,8 +77,8 @@
 	<passive description="I've seen everything" devilprice="2" gfx="Collectibles_076_XrayVision.png" id="76" name="X-Ray Vision" />
 	<active cache="speed" cooldown="180" description="Temporary badass" gfx="Collectibles_077_MyLittleUnicorn.png" id="77" maxcharges="6" name="My Little Unicorn" />
 	<active achievement="7" description="Reusable soul protection" gfx="Collectibles_078_BookOfRevelations.png" id="78" maxcharges="10" name="Book of Revelations" />
-	<passive cache="damage speed" description="DMG up" devilprice="2" gfx="Collectibles_079_TheMark.png" id="79" name="The Mark" soulhearts="2" />
-	<passive cache="damage firedelay" description="DMG + tears up" devilprice="2" gfx="Collectibles_080_ThePact.png" id="80" name="The Pact" soulhearts="4" />
+	<passive cache="damage speed" description="DMG up" devilprice="2" gfx="Collectibles_079_TheMark.png" id="79" name="The Mark" />
+	<passive cache="damage firedelay" description="DMG + tears up" devilprice="2" gfx="Collectibles_080_ThePact.png" id="80" name="The Pact" />
 	<familiar description="9 lives" gfx="Collectibles_081_DeadCat.png" id="81" name="Dead Cat" />
 	<passive cache="flying speed" description="Demon wings" devilprice="2" gfx="Collectibles_082_LordOfThePit.png" blackhearts="6" id="82" name="Lord of the Pit" />
 	<active achievement="9" cache="speed damage" description="Temporary demon form" devilprice="2" gfx="Collectibles_083_TheNail.png" id="83" maxcharges="10" name="The Nail" />
@@ -132,7 +132,7 @@
 	<familiar achievement="46" description="Gives bombs" gfx="Collectibles_131_BombBag.png" id="131" name="Bomb Bag" />
 	<passive cache="damage tearflag tearcolor" description="My Xmas present" gfx="Collectibles_132_ALumpOfCoal.png" id="132" name="A Lump of Coal" />
 	<active description="Soul converter" gfx="Collectibles_133_GuppysPaw.png" id="133" maxcharges="6" name="Guppy's Paw" />
-	<passive description="Cursed?" devilprice="2" gfx="Collectibles_134_GuppysTail.png" id="134" name="Guppy's Tail" />
+	<passive description="Cursed?" devilprice="2" gfx="Collectibles_134_GuppysTail.png" id="134" coins="25" keys="-99" name="Guppy's Tail" />
 	<active cooldown="15" description="Portable blood bank" gfx="Collectibles_135_IVBag.png" id="135" maxcharges="1" name="IV Bag" />
 	<active description="Friends 'till the end" gfx="Collectibles_136_BestFriend.png" id="136" maxcharges="3" name="Best Friend" />
 	<active bombs="5" cooldown="2" description="Remote bomb detonation" gfx="Collectibles_137_RemoteDetonator.png" id="137" maxcharges="0" name="Remote Detonator" />
@@ -166,7 +166,7 @@
 	<passive cache="shotspeed damage" description="Shot speed + damage up" gfx="Collectibles_165_CatONineTails.png" id="165" name="Cat-o-nine-tails" />
 	<active achievement="49" description="Reroll the basics " gfx="Collectibles_166_D20.png" id="166" maxcharges="12" name="D20" />
 	<familiar description="Double shot buddy" gfx="Collectibles_167_HarlequinBaby.png" id="167" name="Harlequin Baby" />
-	<passive achievement="62" cache="all" description="On-demand air strike" devilprice="2" gfx="Collectibles_168_EpicFetus.png" id="168" name="Epic Fetus" special="true" />
+	<passive achievement="62" cache="all" description="On-demand air strike" devilprice="2" gfx="Collectibles_168_EpicFetus.png" id="168" name="Epic Fetus" special="false" />
 	<passive cache="damage firedelay tearflag" description="Mega tears" devilprice="2" gfx="Collectibles_169_Polyphemus.png" id="169" name="Polyphemus" special="true" />
 	<familiar description="DMG 30 x 2" gfx="Collectibles_170_DaddyLonglegs.png" id="170" name="Daddy Longlegs" />
 	<active cooldown="120" description="Mass enemy slowdown + damage" gfx="Collectibles_171_SpiderButt.png" id="171" maxcharges="2" name="Spider Butt" />
@@ -210,10 +210,10 @@
 	<familiar achievement="6" description="Gotta lick 'em all!" gfx="collectibles_207_ballofbandages.png" id="207" name="Ball of Bandages" />
 	<passive cache="damage" description="DMG + Challenge up" gfx="collectibles_208_championbelt.png" id="208" name="Champion Belt" />
 	<passive bombs="5" description="Toxic blast +5 bombs" gfx="collectibles_209_buttbombs.png" id="209" name="Butt Bombs" />
-	<passive description="Unbreakable" devilprice="2" gfx="Collectibles_210_GnawedLeaf.png" id="210" special="true" name="Gnawed Leaf" />
+	<passive description="Unbreakable" devilprice="2" gfx="Collectibles_210_GnawedLeaf.png" id="210" special="false" name="Gnawed Leaf" />
 	<passive description="Spider revenge" gfx="collectibles_211_spiderbaby.png" id="211" name="Spiderbaby" />
 	<passive description="Eternal life?" devilprice="2" gfx="Collectibles_212_GuppysCollar.png" id="212" name="Guppy's Collar" />
-	<active cache="shotspeed" description="Shielded tears" devilprice="2" gfx="collectibles_213_lostcontact.png" id="213" special="true" maxcharges="0" name="Lost Contact" />
+	<active cache="shotspeed" description="Shielded tears" devilprice="2" gfx="collectibles_213_lostcontact.png" id="213" special="false" maxcharges="0" name="Lost Contact" />
 	<passive cache="range" description="Toxic blood" gfx="collectibles_214_anemic.png" id="214" name="Anemic" />
 	<passive cache="damage" description="He accepts your offering" gfx="collectibles_215_goathead.png" id="215" name="Goat Head" />
 	<passive blackhearts="6" cache="damage" description="Sin up" devilprice="2" gfx="Collectibles_216_CeremonialRobes.png" id="216" name="Ceremonial Robes" />
@@ -221,7 +221,7 @@
 	<passive description="Regeneration + HP up" gfx="collectibles_218_placenta.png" hearts="2" id="218" maxhearts="2" name="Placenta" />
 	<passive description="HP up" gfx="collectibles_219_oldbandage.png" id="219" maxhearts="2" name="Old Bandage" />
 	<passive bombs="5" description="Tear blasts +5 bombs" gfx="collectibles_220_sadbombs.png" id="220" name="Sad Bombs" />
-	<active achievement="150" cache="tearcolor tearflag" description="Bouncing tears" devilprice="2" gfx="collectibles_221_rubbercement.png" special="false" id="221" maxcharges="0" name="Rubber Cement" />
+	<active achievement="150" cache="tearcolor tearflag" description="Bouncing tears" devilprice="2" gfx="collectibles_221_rubbercement.png" special="true" id="221" maxcharges="0" name="Rubber Cement" />
 	<passive cache="firedelay tearflag" description="Anti-gravity tears + tears up" gfx="collectibles_222_antigravity.png" id="222" name="Anti-Gravity" />
 	<passive bombs="5" description="It hurts so good +5 bombs" gfx="collectibles_223_pyromaniac.png" id="223" name="Pyromaniac" special="true" />
 	<passive cache="firedelay range tearflag" description="Splash damage + tears up" devilprice="2" gfx="collectibles_224_cricketsbody.png" id="224" special="true" name="Cricket's Body" />
@@ -345,7 +345,7 @@
 	<passive cache="luck" description="Luck up" gfx="collectibles_343_LatchKey.png" id="343" name="Latch Key" soulhearts="2" />
 	<passive blackhearts="2" cache="damage" description="Evil up" gfx="collectibles_344_MatchBook.png" id="344" name="Match Book" />
 	<passive cache="damage range" description="DMG + range up" gfx="collectibles_345_Synthoil.png" id="345" name="Synthoil" />
-	<passive description="Absolute Leviathan" gfx="collectibles_346_ASnack.png" hearts="2" id="346" name="Absolute Leviathan" />
+	<passive description="Absolute Leviathan" gfx="collectibles_346_ASnack.png" id="346" special="true" name="Absolute Leviathan" />
 
 	
 	<active description="Double item vision" devilprice="2" gfx="Collectibles_347_Diplopia.png" id="347" maxcharges="0" special="false" name="Diplopia" />
@@ -381,7 +381,7 @@
 	<passive description="Spider love" gfx="Collectibles_377_BurstingSack.png" id="377" name="Bursting Sack" />
 	<passive description="Uh oh..." gfx="Collectibles_378_NumberTwo.png" id="378" name="No. 2" />
 	<passive cache="tearflag" description="Wide shot" gfx="Collectibles_379_PupulaDuplex.png" id="379" name="Pupula Duplex" />
-	<passive coins="5" description="Money talks" gfx="Collectibles_380_PayToPlay.png" id="380" name="Pay To Play" />
+	<passive coins="15" description="Money talks" gfx="Collectibles_380_PayToPlay.png" id="380" name="Pay To Play" />
 	<passive achievement="188" cache="firedelay" description="Your future shines brighter" gfx="Collectibles_381_EdensBlessing.png" id="381" name="Eden's Blessing" />
 	<active description="Gotta fetch 'em all!" gfx="Collectibles_382_FriendlyBall.png" id="382" maxcharges="3" name="Friendly Ball" />
 	<active description="Remote tear detonation" gfx="Collectibles_383_TearDetonator.png" id="383" maxcharges="1" name="Tear Detonator" />
@@ -453,7 +453,7 @@
 	<passive description="Halitosis" gfx="Collectibles_446_DeadTooth.png" id="446" name="Dead Tooth" />
 	<passive description="Crying makes me toot" gfx="Collectibles_447_LingerBean.png" id="447" name="Linger Bean" />
 	<passive description="Blood and guts!" gfx="Collectibles_448_ShardOfGlass.png" id="448" name="Shard of Glass" />
-	<active description="Super Rookie Lucky Boy" cache="luck" gfx="Collectibles_449_MetalPlate.png" id="449" name="Metal Plate" />
+	<active description="Super Rookie Lucky Boy" cache="luck" gfx="Collectibles_449_MetalPlate.png" id="449" name="Clover" />
 	<passive achievement="308" description="Gold tears!" gfx="Collectibles_450_EyeOfGreed.png" id="450" name="(0.2) Eye of Greed (0.2)" />
 	<passive description="I see the future" devilprice="2" gfx="Collectibles_451_TarotCloth.png" id="451" name="Tarot Cloth" />
 	<passive description="I'm leaking..." gfx="Collectibles_452_VaricoseVeins.png" id="452" name="Varicose Veins" />
@@ -490,12 +490,12 @@
 	<active description="BOOOOOOOOOM!" gfx="Collectibles_483_MaMaMega.png" bombs="10" id="483" name="MaMa Mega!" />
 	<active description="I can't believe it's not butter bean!" gfx="Collectibles_484_WaitWhat.png" id="484" maxcharges="300" name="Wait What?" />
 	
-	<active achievement="294" description="50/50" devilprice="2" gfx="collectibles_485_crookedpenny.png" id="485" maxcharges="6" special="false" name="Crooked Penny" />
+	<active achievement="294" description="50/50" devilprice="2" gfx="collectibles_485_crookedpenny.png" id="485" maxcharges="24" special="false" name="Crooked Penny" />
 	<active achievement="288" description="I feel numb..." gfx="collectibles_486_dullrazor.png" id="486" maxcharges="2" name="Dull Razor" />
 	<active description="A pound of flesh..." gfx="collectibles_487_potatopeeler.png" id="487" maxhearts="2" name="Potato Peeler" />
 	<active achievement="303" description="Waggles a finger" gfx="collectibles_488_metronome.png" id="488" maxcharges="1" name="Metronome" />
 	<active achievement="282" description="Reroll forever" gfx="collectibles_489_dinfinity.png" id="489" maxcharges="2" name="D infinity" />
-	<active achievement="289" description="..." devilprice="2" discharged="true" gfx="collectibles_490_edenssoul.png" id="490" maxcharges="6" name="Eden's Soul" />
+	<active achievement="289" description="..." devilprice="2" discharged="true" gfx="collectibles_490_edenssoul.png" id="490" maxcharges="0" name="Eden's Soul" />
 	<familiar description="Pills pills pills!" gfx="collectibles_491_acidbaby.png" id="491" name="Acid Baby" />
 	<familiar cache="luck" description="Yo listen!" gfx="collectibles_492_yolisten.png" id="492" bombs="3" name="YO LISTEN!" />
 	<passive description="Panic - power" gfx="collectibles_493_adderline.png" id="493" soulhearts="-12" name="Adrenaline Shock" />
@@ -518,7 +518,7 @@
 	<familiar description="It's sharp!" gfx="Collectibles_508_MomsRazor.png" id="508" name="Mom's Razor" />
 	<familiar description="Bloody friend" gfx="Collectibles_509_BloodshotEye.png" id="509" name="Bloodshot Eye" />
 	
-	<active achievement="338" description="Unleash the power!" gfx="Collectibles_510_Delirious.png" id="510" maxcharges="6" name="Delirious" />
+	<active achievement="338" description="Unleash the power!" gfx="Collectibles_510_Delirious.png" id="510" maxcharges="4" name="Delirious" />
 
 
 	<!-- Booster Pack #1 -->
@@ -535,7 +535,7 @@
 
 	<!-- Booster Pack #2 -->
 	<passive description="Bloody Recharge!" gfx="Collectibles_520_JumperCable.png" name="Jumper Cables" id="520" />
-	<active description="Allow 6 weeks for delivery" gfx="Collectibles_521_CerealCutout.png" maxcharges="12" name="Coupon" id="521" />
+	<active description="Allow 6 weeks for delivery" gfx="Collectibles_521_CerealCutout.png" maxcharges="24" name="Coupon" id="521" />
 	<active description="The power of mind!" gfx="Collectibles_522_Telekinesis.png" maxcharges="60" name="Telekinesis" id="522" />
 	<active description="Pack and unpack" gfx="collectibles_523_movingbox.png" maxcharges="4" name="Moving Box" id="523" />
 	<passive description="Static tears!" gfx="Collectibles_524_TechnologyZero.png" name="Technology Zero" id="524" cache="tearflag" />

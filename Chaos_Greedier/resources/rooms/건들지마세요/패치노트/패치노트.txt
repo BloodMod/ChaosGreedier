@@ -40,6 +40,37 @@ https://goo.gl/uLkMCw
 - 게임 시작직후 움직이기전 ESC 버튼을 1회 눌러 시드가 녹화된 후 플레이
 - 모든 
 --------------------------------------------------------------------
+▶Chaos Greed Greedier 3.2
+ -Keeper : The Hourglass 추가, Piggy Bank, Swallowed Penny 획득시 제거
+ -??? : Nightmare Heart 추가, Brown Nugget -> Delirious 변경
+ -신규 제거 배열 아이템: Technology Zero
+ -신규 제거 배열 해제 아이템 : Guppy's Tail, Blood Rights, Coupon
+ -신규 레어 아이템 : Rubber Cement
+ -신규 레어 해제 아이템 : Epic Fetus, Gnawed Leaf
+ -Cleaner : Tiny Planet 제거 아이템 추가
+ -Crooked Penny : 쿨타임 6 -> 24 증가
+ -Coupon : 쿨타임 12 -> 24 증가
+ -Guppy's Tail : Coins +25, Keys -99
+ -Maw Of The Void : DMG 1 -> 5 증가
+ -Pay To Play : Coins +5 -> +15 증가
+ -신규 세트 아이템 : 초고대문명 세트 : Sacred Heart 추가
+ -Symbol Of Babylonia, Fars's Golden Goblet, Rosetta Stone : DMG 1.4 -> 1.2 변경, 단일 효과 전부 제거, 패시브 아이템으로 변경
+ -Ultra Greedier : 45000 -> 50000 증가 (11%증가)
+ -Hush : 30000 -> 45000 증가 (50% 증가)
+ -Alt : 60000 -> 45000 감소 (25% 감소)
+ -Satan : 30000 -> 45000 증가 (50% 증가)
+ -Satan Stomp : 24000 -> 40000 증가 (66% 증가)
+
+▶Chaos Greed Greedier 3.1(2)
+ -Ultra Greed(Stage) : 스타트룸 구조 완화 (보상 획득이 더 쉬워집니다.)
+ -The Shop(Stage) : 11웨이브 보스 몬스터가 비정상적이던 현상 수정
+ -The Shop : Lil Battery -> Red Chest 변경
+ -The Pact : DMG 0.5 -> 5.0 증가, SoulHearts -2 감소
+ -The Mark : DMG 1 -> 10증가, SoulHearts -1 감소
+ -신규 레어 아이템 : Absolute Leviathan
+ -Eden's Soul : 쿨타임 6 -> 0 감소, 악마 기본 배열로 변경 (더 이상 황금방 및 상점에서 드랍되지 않습니다.)
+ -Delirious : 쿨타임 6 -> 4 감소
+
 ▶Chaos Greed Greedier 3.1
  -The Depths : 일부 웨이브 난이도 하향
  -일부 아이템 이미지가 비정상적이던 현상 수정
@@ -75,7 +106,7 @@ https://goo.gl/uLkMCw
 ▶Chaos Greed Greedier 3.0
  -Samael : Black Hole 추가
  -Greed Shop(Stage) : Perthro 추가
- -신규 레어 배열 해제 : Absolute Inzektor
+ -신규 레어 배열 해제 아이템 : Absolute Inzektor
  -Mom's Razor, Lil' Brimstone : 획득시 x3 추가
  -신규 아이템 : Clover
 └Clover : Luck +14 증가, 액티브
@@ -512,7 +543,7 @@ https://goo.gl/uLkMCw
 Greed Devil, Devil, Greed Golden Chest, Golden Chest, Curse
 Greed Angel, Angel, Library, Bomb bum
 Red Chest, Greed Curse
-Greed Shop, Greed Treasure, Greed Library, Shop
+GreedSecret, Greed Shop, Greed Treasure, Greed Library, Shop
 
 //Unknown
  -신규 아이템 : Refined Destructive Magic Stone Bracelet(정제된 마석의 팔찌), Refined Chaos Stone Necklace(정제된 마석의 목걸이), Refined Amnesia Stone Ring(정제된 마석의 반지)

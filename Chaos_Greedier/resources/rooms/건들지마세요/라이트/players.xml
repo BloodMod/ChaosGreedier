@@ -7,7 +7,7 @@
 
 	<player bigportrait="PlayerPortraitBig_04_Judas.png" coins="0" costume="9" hp="6" id="3" items="34,139,416,414,545" card="55" name="Judas" coins="90" nameimage="PlayerName_04_Judas.png" portrait="PlayerPortrait_04_Judas.png" skin="Character_004_Judas.png" skinColor="-1" />
 
-	<player armor="6" bigportrait="PlayerPortraitBig_06_Bluebaby.png" hp="0" id="4" items="36,504,139,416,414,545" card="55" name="???" coins="90" nameimage="PlayerName_06_BlueBaby.png" portrait="PlayerPortrait_06_BlueBaby.png" skin="Character_006_Bluebaby.png" skinColor="2" />
+	<player armor="6" bigportrait="PlayerPortraitBig_06_Bluebaby.png" hp="0" id="4" items="36,510,139,416,414,545,16" card="55" name="???" coins="90" nameimage="PlayerName_06_BlueBaby.png" portrait="PlayerPortrait_06_BlueBaby.png" skin="Character_006_Bluebaby.png" skinColor="2" />
 
 	<player bigportrait="PlayerPortraitBig_05_Eve.png" costume="10" hp="6" id="5" items="512,122,117,139,416,414,545" card="55" name="Eve" coins="90" nameimage="PlayerName_05_Eve.png" portrait="PlayerPortrait_05_Eve.png" skin="Character_005_Eve.png" skinColor="-1" />
 
